@@ -1,0 +1,21 @@
+{
+  "name": "kevinrocher",
+  "version": "0.0.0",
+  "description": "Développeur Front-End / WordPress Freelance",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Darklg/KevinRocher.git"
+  },
+  "author": "Kévin Rocher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Darklg/KevinRocher/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-jekyll": "~0.4.1",
+    "grunt-shell": "~0.6.4"
+  }
+}

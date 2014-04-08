@@ -7,7 +7,13 @@
 <head>
     <meta charset="utf-8" />
     <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.name }} | {{ site.description }}</title>
+    {% if site.destination == '_dev' %}
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="/assets/js/main.js"></script>
+    {% else %}
+    <link rel="stylesheet" href="/assets/css/main.css?t={{ site.time | date: '%Y%m%d%H%M%S' }}" />
+    <script src="/assets/js/main.js?t={{ site.time | date: '%Y%m%d%H%M%S' }}"></script>
+    {% endif %}
     <meta name="viewport" content="width=device-width" />
 </head>
 <body>

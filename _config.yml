@@ -2,6 +2,6 @@ name: Kévin Rocher
 description: Développeur Front-End / WordPress Freelance
 
 source: _src
-destination: _ghpages
+destination: _prod
 markdown: kramdown
 pygments: true
