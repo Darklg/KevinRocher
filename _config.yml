@@ -1,0 +1,7 @@
+name: Kévin Rocher
+description: Développeur Front-End / WordPress Freelance
+
+source: _src
+destination: _ghpages
+markdown: kramdown
+pygments: true
