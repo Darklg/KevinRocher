@@ -41,6 +41,13 @@ module.exports = function(grunt) {
                 files: uglifyFiles,
             },
         },
+        'gh-pages': {
+            options: {
+                base: '_prod',
+                branch: 'prod'
+            },
+            src: '**/*'
+        },
         shell: {
             jekyll: {
                 command: 'jekyll build;'
@@ -63,6 +70,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-gh-pages');
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-shell');
 
@@ -79,5 +87,9 @@ module.exports = function(grunt) {
         'uglify',
         // Clean up
         'shell:postconcat'
+    ]);
+    grunt.registerTask('deploy', [
+        'build',
+        'gh-pages'
     ]);
 };
