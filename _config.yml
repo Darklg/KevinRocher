@@ -5,3 +5,11 @@ source: _src
 destination: _prod
 markdown: kramdown
 pygments: true
+
+js_assets :
+  - assets/js/app/functions.js
+  - assets/js/app/events.js
+
+css_assets :
+  - assets/css/dev--cssc-default.css
+  - assets/css/dev--cssc-common.css
