@@ -1,0 +1,9 @@
+[submodule "wp-content/plugins/wpuoptions"]
+	path = wp-content/plugins/wpuoptions
+	url = git@github.com:WordPressUtilities/wpuoptions.git
+[submodule "wp-content/plugins/wpupostmetas"]
+	path = wp-content/plugins/wpupostmetas
+	url = git@github.com:WordPressUtilities/wpupostmetas.git
+[submodule "wp-content/plugins/wpuseo"]
+	path = wp-content/plugins/wpuseo
+	url = git@github.com:WordPressUtilities/wpuseo.git
