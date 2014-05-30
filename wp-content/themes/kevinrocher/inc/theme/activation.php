@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Configuration after Theme activation
  *
@@ -21,41 +22,44 @@ $wputh_setup_options = array(
 );
 
 $wputh_setup_pages = array(
+    'home__page_id' => array(
+        'post_title' => 'Accueil',
+        'post_content' => '<p>Bienvenue sur ce site.</p>'
+    ) ,
     'about__page_id' => array(
         'post_title' => 'A Propos',
         'post_content' => '<p>A Propos de ce site.</p>',
-    ),
-    'mentions__page_id' => array(
-        'post_title' => 'Mentions Legales',
-        'post_content' => '<p>Mentions l&eacute;gales du site.</p>',
-    ),
+    )
 );
 
 // Old way for activation hook
-if ( is_admin() && isset( $_GET['activated'] ) && $pagenow == "themes.php" ) {
+if (is_admin() && isset($_GET['activated']) && $pagenow == "themes.php") {
+
+    $activation__home__page_id = '';
+
     // Setting options
-    foreach ( $wputh_setup_options as $name => $value ) {
-        update_option( $name, $value );
+    foreach ($wputh_setup_options as $name => $value) {
+        update_option($name, $value);
     }
 
     // Creating pages
-    foreach ( $wputh_setup_pages as $id => $page ) {
-        $option = get_option( $id );
+    foreach ($wputh_setup_pages as $id => $page) {
+        $option = get_option($id);
 
         // If page doesn't exists
-        if ( !is_numeric( $option ) ) {
+        if (!is_numeric($option)) {
 
-            if ( !isset( $page['post_status'] ) ) {
+            if (!isset($page['post_status'])) {
                 $page['post_status'] = 'publish';
             }
-            if ( !isset( $page['post_type'] ) ) {
+            if (!isset($page['post_type'])) {
                 $page['post_type'] = 'page';
             }
 
             // Create page
-            $option_page = wp_insert_post( $page );
-            if ( is_numeric( $option_page ) ) {
-                update_option( $id, $option_page );
+            $option_page = wp_insert_post($page);
+            if (is_numeric($option_page)) {
+                update_option($id, $option_page);
             }
         }
     }

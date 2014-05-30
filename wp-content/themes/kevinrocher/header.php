@@ -17,10 +17,6 @@ if ( !isset( $_GET['is_ajax'] ) ) {
     echo '<'.$main_tag.' class="h1 main-title">';
     echo '<a href="' . site_url() . '">'.get_bloginfo( 'name' ).'</a>';
     echo '</'.$main_tag.'>';
-    /* Search form */
-    include get_template_directory() . '/tpl/header/searchform.php';
-    /* Social links */
-    include get_template_directory() . '/tpl/header/social.php';
     /* Main menu */
     wp_nav_menu( array(
         'depth' => 1,
@@ -32,6 +28,4 @@ if ( !isset( $_GET['is_ajax'] ) ) {
 </div>
 <div class="main-container centered-container"><div class="main-container--inner" id="content">
 <?php }
-include get_template_directory() . '/tpl/header/languages.php';
-include get_template_directory() . '/tpl/header/breadcrumbs.php';
 include get_template_directory() . '/tpl/header/jsvalues.php';
