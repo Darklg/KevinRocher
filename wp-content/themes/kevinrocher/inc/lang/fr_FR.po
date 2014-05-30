@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WPUtilities\n"
-"POT-Creation-Date: 2014-05-11 23:20+0100\n"
+"POT-Creation-Date: 2014-05-30 16:44+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Kevin <kevin@rocher.me>\n"
 "Language-Team: \n"
@@ -16,105 +16,113 @@ msgstr ""
 "X-Poedit-SearchPath-0: ../../.\n"
 "X-Poedit-SearchPath-1: ../../../../mu-plugins\n"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:72
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:73
 msgid "Add New"
 msgstr "Ajouter"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:73
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:74
 #, php-format
 msgctxt "male"
 msgid "Add New %s"
 msgstr "Ajouter un %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:74
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:75
 #, php-format
 msgctxt "male"
 msgid "Edit %s"
 msgstr "Modifier ce %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:75
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:76
 #, php-format
 msgctxt "male"
 msgid "New %s"
 msgstr "Nouveau %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:76
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:77
 #, php-format
 msgctxt "male"
 msgid "All %s"
 msgstr "Tous les %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:77
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:78
 #, php-format
 msgctxt "male"
 msgid "View %s"
 msgstr "Voir cet %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:78
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:79
 #, php-format
 msgctxt "male"
 msgid "Search %s"
 msgstr "Rechercher un %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:79
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:80
 #, php-format
 msgctxt "male"
 msgid "No %s found"
 msgstr "Aucun %s trouvé"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:80
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:81
 #, php-format
 msgctxt "male"
 msgid "No %s found in Trash"
 msgstr "Aucun %s trouvé dans la corbeille"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:88
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:89
 #, php-format
 msgctxt "female"
 msgid "Add New %s"
 msgstr "Ajouter une %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:89
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:90
 #, php-format
 msgctxt "female"
 msgid "Edit %s"
 msgstr "Modifier cette %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:90
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:91
 #, php-format
 msgctxt "female"
 msgid "New %s"
 msgstr "Nouvelle %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:91
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:92
 #, php-format
 msgctxt "female"
 msgid "All %s"
 msgstr "Toutes les %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:92
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:93
 #, php-format
 msgctxt "female"
 msgid "View %s"
 msgstr "Voir cette %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:93
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:94
 #, php-format
 msgctxt "female"
 msgid "Search %s"
 msgstr "Rechercher une %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:94
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:95
 #, php-format
 msgctxt "female"
 msgid "No %s found"
 msgstr "Aucune %s trouvée"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:95
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:96
 #, php-format
 msgctxt "female"
 msgid "No %s found in Trash"
 msgstr "Aucune %s trouvée dans la corbeille"
+
+#: ../../../../mu-plugins/wpudisableposts.php:76
+msgid "Our RSS feed is disabled. Please <a href=\""
+msgstr ""
+
+#: ../../../../mu-plugins/wputh_admin_protect.php:34
+msgid "You are not allowed to access this part of the site"
+msgstr "Vous n'êtes pas autorisé à accéder à cette partie du site."
 
 #: ../.././404.php:7 ../.././tpl/header/breadcrumbs.php:72
 msgid "404 Error"
@@ -124,46 +132,59 @@ msgstr "Erreur 404"
 msgid "Sorry, but this page doesn&rsquo;t exists."
 msgstr "Désolé, mais cette page n'existe pas."
 
-#: ../.././footer.php:10
+#: ../.././footer.php:15
+#, php-format
+msgid "Siret: %s"
+msgstr "Siret : %s"
+
+#: ../.././footer.php:18
 #, php-format
 msgid "A %s site using %s"
 msgstr "Un site %s utilisant %s"
 
-#: ../.././functions.php:27
+#: ../.././functions.php:39
 msgid "Main menu"
 msgstr "Menu principal"
 
-#: ../.././functions.php:38
+#: ../.././functions.php:50
 msgid "Work"
 msgstr "Projet"
 
-#: ../.././functions.php:39
+#: ../.././functions.php:51
 msgid "Works"
 msgstr "Projets"
 
-#: ../.././functions.php:53
+#: ../.././functions.php:65
 msgid "Work type"
 msgstr "Type de Work"
 
-#: ../.././functions.php:64
-msgid "Default Sidebar"
-msgstr "Sidebar par défaut"
+#: ../.././functions.php:69
+msgid "Work technology"
+msgstr "Technologie du projet"
 
-#: ../.././functions.php:66
-msgid "Default theme sidebar"
-msgstr "Sidebar du thème par défaut"
+#: ../.././inc/plugins/wpu-options.php:24
+msgid "Confidential description"
+msgstr "Description confidentielle"
 
-#: ../.././inc/plugins/wpu-options.php:25
+#: ../.././inc/plugins/wpu-options.php:27
 msgid "Email address"
 msgstr "Adresse email"
+
+#: ../.././inc/plugins/wpu-options.php:28
+msgid "Phone number"
+msgstr "Numéro de téléphone"
+
+#: ../.././inc/plugins/wpu-options.php:29
+msgid "Siret number"
+msgstr "Numéro de SIRET"
 
 #: ../.././inc/plugins/wpu-options.php:37
 msgid "About"
 msgstr "A Propos"
 
 #: ../.././inc/plugins/wpu-options.php:38
-msgid "Mentions"
-msgstr "Mentions"
+msgid "Home page"
+msgstr "Accueil"
 
 #: ../.././inc/theme/utilities.php:41
 msgid "Sorry, no search results for this query."
@@ -186,33 +207,13 @@ msgstr "<strong>%s</strong> commentaires"
 msgid "Comments are closed"
 msgstr "Les commentaires sont fermés"
 
-#: ../.././loop.php:8 ../.././tpl/loops/header-loop-small.php:8
-msgid "F j, Y"
-msgstr "j F Y"
+#: ../.././loop-works.php:12
+msgid "Confidential"
+msgstr "Confidentiel"
 
-#: ../.././loop.php:10 ../.././tpl/loops/header-loop-small.php:4
-msgid "By"
-msgstr "Par"
-
-#: ../.././loop.php:14
-msgid "Tags:"
-msgstr "Tags :"
-
-#: ../.././page-templates/page-downloads.php:29
-msgid "Size:"
-msgstr "Poids :"
-
-#: ../.././page-templates/page-sitemap.php:13
-msgid "Home page"
-msgstr "Accueil"
-
-#: ../.././page-templates/page-sitemap.php:74
-msgid "Pages"
-msgstr "Pages"
-
-#: ../.././page-templates/page-sitemap.php:79
-msgid "Posts"
-msgstr "Articles"
+#: ../.././loop-works.php:14
+msgid "Contact me"
+msgstr "Me contacter"
 
 #: ../.././search.php:5
 msgid "<strong>no</strong> search results"
@@ -232,45 +233,6 @@ msgstr "<strong>%s</strong> résultats de recherche"
 msgid "%s for &ldquo;%s&rdquo;"
 msgstr "%s pour &ldquo;%s&rdquo;"
 
-#: ../.././tpl/contact/header-action.php:6
-msgid "Name"
-msgstr "Nom"
-
-#: ../.././tpl/contact/header-action.php:10
-msgid "Email"
-msgstr "E-mail"
-
-#: ../.././tpl/contact/header-action.php:15
-msgid "Message"
-msgstr "Message"
-
-#: ../.././tpl/contact/header-action.php:60
-#, php-format
-msgid "The field \"%s\" is not correct"
-msgstr "Le champ \"%s\" n'est pas correct"
-
-#: ../.././tpl/contact/header-action.php:67
-#, php-format
-msgid "The field \"%s\" is required"
-msgstr "Le champ \"%s\" est obligatoire"
-
-#: ../.././tpl/contact/header-action.php:74
-msgid "Thank you for your message!"
-msgstr "Merci pour votre message !"
-
-#: ../.././tpl/contact/header-action.php:77
-#: ../.././tpl/contact/header-action.php:85
-msgid "Message from your contact form"
-msgstr "Message depuis votre formulaire de contact"
-
-#: ../.././tpl/contact/header-action.php:89
-msgid "Error:"
-msgstr "Erreur :"
-
-#: ../.././tpl/contact/header-action.php:117
-msgid "Submit"
-msgstr "Envoyer"
-
 #: ../.././tpl/header/breadcrumbs.php:17
 msgid "Home"
 msgstr "Accueil"
@@ -280,43 +242,87 @@ msgstr "Accueil"
 msgid "Search results for \"%s\""
 msgstr "Résultats de recherche pour \"%s\""
 
-#: ../.././tpl/header/searchform.php:7
-msgid "Search for:"
-msgstr "Rechercher :"
-
-#: ../.././tpl/header/searchform.php:8
-msgid "Enter your keywords..."
-msgstr "Entrez vos mots-clefs..."
-
-#: ../.././tpl/header/searchform.php:8
-msgid "Search by keywords"
-msgstr "Rechercher par mots-clefs"
-
-#: ../.././tpl/header/searchform.php:9
-#, php-format
-msgid "Search on %s"
-msgstr "Rechercher sur %s"
-
-#: ../.././tpl/header/searchform.php:9
-msgid "Search"
-msgstr "Rechercher"
-
-#: ../.././tpl/header/social.php:11
-#, php-format
-msgid "%s: Follow %s (open in new window)"
-msgstr "%s : Suivre %s (s'ouvre dans une nouvelle fenêtre)"
-
 #: ../.././tpl/paginate.php:28
 msgid "Next page"
 msgstr "Page suivante"
 
-#: ../.././tpl/widgets/widget_post_categories.php:22
-msgid "Number of posts:"
-msgstr "Nombre de posts :"
+#~ msgid "Default Sidebar"
+#~ msgstr "Sidebar par défaut"
 
-#: ../.././tpl/widgets/widget_post_categories.php:25
-msgid "Category:"
-msgstr "Catégorie :"
+#~ msgid "Default theme sidebar"
+#~ msgstr "Sidebar du thème par défaut"
+
+#~ msgid "Mentions"
+#~ msgstr "Mentions"
+
+#~ msgid "F j, Y"
+#~ msgstr "j F Y"
+
+#~ msgid "By"
+#~ msgstr "Par"
+
+#~ msgid "Tags:"
+#~ msgstr "Tags :"
+
+#~ msgid "Size:"
+#~ msgstr "Poids :"
+
+#~ msgid "Pages"
+#~ msgstr "Pages"
+
+#~ msgid "Posts"
+#~ msgstr "Articles"
+
+#~ msgid "Name"
+#~ msgstr "Nom"
+
+#~ msgid "Email"
+#~ msgstr "E-mail"
+
+#~ msgid "Message"
+#~ msgstr "Message"
+
+#~ msgid "The field \"%s\" is not correct"
+#~ msgstr "Le champ \"%s\" n'est pas correct"
+
+#~ msgid "The field \"%s\" is required"
+#~ msgstr "Le champ \"%s\" est obligatoire"
+
+#~ msgid "Thank you for your message!"
+#~ msgstr "Merci pour votre message !"
+
+#~ msgid "Message from your contact form"
+#~ msgstr "Message depuis votre formulaire de contact"
+
+#~ msgid "Error:"
+#~ msgstr "Erreur :"
+
+#~ msgid "Submit"
+#~ msgstr "Envoyer"
+
+#~ msgid "Search for:"
+#~ msgstr "Rechercher :"
+
+#~ msgid "Enter your keywords..."
+#~ msgstr "Entrez vos mots-clefs..."
+
+#~ msgid "Search by keywords"
+#~ msgstr "Rechercher par mots-clefs"
+
+#~ msgid "Search on %s"
+#~ msgstr "Rechercher sur %s"
+
+#~ msgid "Search"
+#~ msgstr "Rechercher"
+
+#~ msgid "%s: Follow %s (open in new window)"
+#~ msgstr "%s : Suivre %s (s'ouvre dans une nouvelle fenêtre)"
+
+#~ msgid "Number of posts:"
+#~ msgstr "Nombre de posts :"
+
+#~ msgid "Category:"
+#~ msgstr "Catégorie :"
 
 #~ msgid "task"
 #~ msgstr "tâche"
@@ -357,9 +363,6 @@ msgstr "Catégorie :"
 
 #~ msgid "Day:"
 #~ msgstr "Jour :"
-
-#~ msgid "Contact"
-#~ msgstr "Contact"
 
 #, fuzzy
 #~ msgctxt "female"

@@ -21,10 +21,6 @@ function wputh_add_javascripts() {
             'uri' => '/js/modules/home.js',
             'footer' => 1
         ),
-        'wpu-faq' => array(
-            'uri' => '/js/modules/faq.js',
-            'footer' => 1
-        ),
         'events' => array(
             'uri' => '/js/events.js',
             'footer' => 1

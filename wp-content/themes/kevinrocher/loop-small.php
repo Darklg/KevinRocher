@@ -9,11 +9,7 @@ $has_thumb = has_post_thumbnail();
         </div>
         <?php endif; ?>
         <div class="bm-cont">
-            <?php include get_template_directory() . '/tpl/loops/header-loop-small.php'; ?>
             <?php the_excerpt(); ?>
-            <footer class="lpsm-metas">
-                <?php the_category( ', ' ); ?>
-            </footer>
         </div>
     </div>
 </article>

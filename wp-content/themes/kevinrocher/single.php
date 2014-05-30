@@ -9,8 +9,6 @@ the_post();
 /* Content */
 get_template_part( 'loop' );
 
-/* Comments */
-comments_template();
 
 /* Pagination */
 $previous_post_link = trim( get_previous_post_link( '&laquo; %link' ) );

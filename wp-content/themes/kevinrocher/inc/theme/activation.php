@@ -26,8 +26,14 @@ $wputh_setup_pages = array(
         'post_title' => 'Accueil',
         'post_content' => '<p>Bienvenue sur ce site.</p>'
     ) ,
+    'contact__page_id' => array(
+        'post_title' => 'Contact',
+        '_wp_page_template' => 'page-templates/page-contact.php',
+        'post_content' => '<p>Je suis disponible à partir de Fin Juin. Et si on travaillait ensemble ?</p>'
+    ) ,
     'about__page_id' => array(
         'post_title' => 'A Propos',
+        '_wp_page_template' => 'page-templates/page-about.php',
         'post_content' => '<p>A Propos de ce site.</p>',
     )
 );

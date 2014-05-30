@@ -7,12 +7,18 @@ include dirname(__FILE__) . '/z-protect.php';
 
 $pages_ids = array(
     'ABOUT__PAGE_ID' => 'about__page_id',
+    'CONTACT__PAGE_ID' => 'contact__page_id',
     'HOME__PAGE_ID' => 'home__page_id'
 );
 
 foreach ($pages_ids as $constant => $option) {
     define($constant, get_option($option));
 }
+
+/* Social networks
+-------------------------- */
+
+define('SOCIAL_NETWORKS', serialize(array('twitter','github','linkedin', 'viadeo')));
 
 /* Redirs
  -------------------------- */
@@ -44,7 +50,7 @@ register_nav_menus(array(
 add_filter('wputh_get_posttypes', 'wputh_set_theme_posttypes');
 function wputh_set_theme_posttypes($post_types) {
     $post_types = array(
-        'work' => array(
+        'works' => array(
             'menu_icon' => 'dashicons-portfolio',
             'name' => __('Work', 'wputh') ,
             'plural' => __('Works', 'wputh') ,
@@ -62,7 +68,11 @@ function wputh_set_theme_taxonomies($taxonomies) {
     $taxonomies = array(
         'work-type' => array(
             'name' => __('Work type', 'wputh') ,
-            'post_type' => 'work'
+            'post_type' => 'works'
+        ),
+        'work-technology' => array(
+            'name' => __('Work technology', 'wputh') ,
+            'post_type' => 'works'
         )
     );
     return $taxonomies;
@@ -77,7 +87,8 @@ if (function_exists('set_post_thumbnail_size')) {
 }
 
 if (function_exists('add_image_size')) {
-    add_image_size('content-thumb', 300, 9999);
+    add_image_size('thumb-content', 940, 726, 1);
+    add_image_size('thumb-work', 300, 232, 1);
 }
 
 /* ----------------------------------------------------------
