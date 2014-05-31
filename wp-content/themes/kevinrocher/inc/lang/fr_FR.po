@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WPUtilities\n"
-"POT-Creation-Date: 2014-05-30 16:44+0100\n"
+"POT-Creation-Date: 2014-05-31 23:25+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Kevin <kevin@rocher.me>\n"
 "Language-Team: \n"
@@ -16,101 +16,101 @@ msgstr ""
 "X-Poedit-SearchPath-0: ../../.\n"
 "X-Poedit-SearchPath-1: ../../../../mu-plugins\n"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:73
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:113
 msgid "Add New"
 msgstr "Ajouter"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:74
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:114
 #, php-format
 msgctxt "male"
 msgid "Add New %s"
 msgstr "Ajouter un %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:75
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:115
 #, php-format
 msgctxt "male"
 msgid "Edit %s"
 msgstr "Modifier ce %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:76
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:116
 #, php-format
 msgctxt "male"
 msgid "New %s"
 msgstr "Nouveau %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:77
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:117
 #, php-format
 msgctxt "male"
 msgid "All %s"
 msgstr "Tous les %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:78
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:118
 #, php-format
 msgctxt "male"
 msgid "View %s"
 msgstr "Voir cet %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:79
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:119
 #, php-format
 msgctxt "male"
 msgid "Search %s"
 msgstr "Rechercher un %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:80
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:120
 #, php-format
 msgctxt "male"
 msgid "No %s found"
 msgstr "Aucun %s trouvé"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:81
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:121
 #, php-format
 msgctxt "male"
 msgid "No %s found in Trash"
 msgstr "Aucun %s trouvé dans la corbeille"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:89
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:128
 #, php-format
 msgctxt "female"
 msgid "Add New %s"
 msgstr "Ajouter une %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:90
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:129
 #, php-format
 msgctxt "female"
 msgid "Edit %s"
 msgstr "Modifier cette %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:91
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:130
 #, php-format
 msgctxt "female"
 msgid "New %s"
 msgstr "Nouvelle %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:92
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:131
 #, php-format
 msgctxt "female"
 msgid "All %s"
 msgstr "Toutes les %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:93
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:132
 #, php-format
 msgctxt "female"
 msgid "View %s"
 msgstr "Voir cette %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:94
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:133
 #, php-format
 msgctxt "female"
 msgid "Search %s"
 msgstr "Rechercher une %s"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:95
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:134
 #, php-format
 msgctxt "female"
 msgid "No %s found"
 msgstr "Aucune %s trouvée"
 
-#: ../../../../mu-plugins/wpu_posttypestaxos.php:96
+#: ../../../../mu-plugins/wpu_posttypestaxos.php:135
 #, php-format
 msgctxt "female"
 msgid "No %s found in Trash"
@@ -142,25 +142,37 @@ msgstr "Siret : %s"
 msgid "A %s site using %s"
 msgstr "Un site %s utilisant %s"
 
-#: ../.././functions.php:39
+#: ../.././functions.php:50
 msgid "Main menu"
 msgstr "Menu principal"
 
-#: ../.././functions.php:50
+#: ../.././functions.php:61
 msgid "Work"
 msgstr "Projet"
 
-#: ../.././functions.php:51
+#: ../.././functions.php:62
 msgid "Works"
 msgstr "Projets"
 
-#: ../.././functions.php:65
+#: ../.././functions.php:67
+msgid "Experience"
+msgstr "Expérience"
+
+#: ../.././functions.php:68
+msgid "Experiences"
+msgstr "Expériences"
+
+#: ../.././functions.php:85
 msgid "Work type"
 msgstr "Type de Work"
 
-#: ../.././functions.php:69
+#: ../.././functions.php:89
 msgid "Work technology"
 msgstr "Technologie du projet"
+
+#: ../.././functions.php:93
+msgid "Experience type"
+msgstr "Type d'expérience"
 
 #: ../.././inc/plugins/wpu-options.php:24
 msgid "Confidential description"
@@ -178,11 +190,11 @@ msgstr "Numéro de téléphone"
 msgid "Siret number"
 msgstr "Numéro de SIRET"
 
-#: ../.././inc/plugins/wpu-options.php:37
+#: ../.././inc/plugins/wpu-options.php:38
 msgid "About"
 msgstr "A Propos"
 
-#: ../.././inc/plugins/wpu-options.php:38
+#: ../.././inc/plugins/wpu-options.php:39
 msgid "Home page"
 msgstr "Accueil"
 
@@ -214,6 +226,14 @@ msgstr "Confidentiel"
 #: ../.././loop-works.php:14
 msgid "Contact me"
 msgstr "Me contacter"
+
+#: ../.././page-templates/page-contact.php:16
+msgid "Call me maybe"
+msgstr "Call me maybe"
+
+#: ../.././page-templates/page-contact.php:25
+msgid "Social networks"
+msgstr "Réseaux sociaux"
 
 #: ../.././search.php:5
 msgid "<strong>no</strong> search results"

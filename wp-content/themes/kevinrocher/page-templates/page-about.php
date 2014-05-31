@@ -12,6 +12,7 @@ the_post();
     <div class="cssc-content cssc-block">
         <?php the_content(); ?>
     </div>
+    <?php include get_template_directory() . '/tpl/about/experiences.php'; ?>
 </article>
 </div>
 <?php

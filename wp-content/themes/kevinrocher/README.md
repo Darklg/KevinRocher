@@ -1,13 +1,4 @@
-WPUTheme
+Portfolio Theme
 =================
 
-WPUTheme is a responsive theme for WordPress.
-You should use it with its plugins & mu-plugins, for an optimal experience !
-
-Page templates
----
-
-* **Contact** : A contact form sending an email.
-* **Download** : A list of attached files.
-* **Gallery** : A gallery of attached pictures.
-* **Sitemap** : A list of all the pages.
+This theme is used on my personal website under an MIT License. But please don't use it directly out of the box. Play with it, Customize it, Tweak it and Share your enhancements !

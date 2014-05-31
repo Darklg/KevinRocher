@@ -16,9 +16,14 @@ foreach ($pages_ids as $constant => $option) {
 }
 
 /* Social networks
--------------------------- */
+ -------------------------- */
 
-define('SOCIAL_NETWORKS', serialize(array('twitter','github','linkedin', 'viadeo')));
+define('SOCIAL_NETWORKS', serialize(array(
+    'twitter',
+    'github',
+    'linkedin',
+    'viadeo'
+)));
 
 /* Redirs
  -------------------------- */
@@ -35,7 +40,8 @@ function kr_redirections() {
 
 define("THEME_URL", get_template_directory_uri());
 define('PAGINATION_KIND', 'numbers');
- // load-more || numbers || default
+
+// load-more || numbers || default
 
 /* Menus
  -------------------------- */
@@ -55,7 +61,16 @@ function wputh_set_theme_posttypes($post_types) {
             'name' => __('Work', 'wputh') ,
             'plural' => __('Works', 'wputh') ,
             'female' => 0
-        )
+        ) ,
+        'experiences' => array(
+            'menu_icon' => 'dashicons-calendar',
+            'name' => __('Experience', 'wputh') ,
+            'plural' => __('Experiences', 'wputh') ,
+            'rewrite' => false,
+            'has_archive' => false,
+            'publicly_queryable' => false,
+            'female' => 1,
+        ) ,
     );
     return $post_types;
 }
@@ -69,11 +84,15 @@ function wputh_set_theme_taxonomies($taxonomies) {
         'work-type' => array(
             'name' => __('Work type', 'wputh') ,
             'post_type' => 'works'
-        ),
+        ) ,
         'work-technology' => array(
             'name' => __('Work technology', 'wputh') ,
             'post_type' => 'works'
-        )
+        ) ,
+        'experience-type' => array(
+            'name' => __('Experience type', 'wputh') ,
+            'post_type' => 'experiences'
+        ) ,
     );
     return $taxonomies;
 }
