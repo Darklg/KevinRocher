@@ -13,7 +13,6 @@
         <h1><?php echo PROJECT_NAME; ?></h1>
         <p>Développeur Front-End Freelance</p>
     </div>
-    <div class="header-logo"></div>
     <nav class="header-nav">
     <ul>
         <li><a href="#about">A Propos</a></li>

@@ -46,6 +46,7 @@ li {
     line-height: $header-margin;
     color: #fff;
     background-color: $color-main;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Title
@@ -108,7 +109,6 @@ li {
     color: #fff;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    -webkit-font-smoothing: antialiased;
 }
 
 .header-nav .current a,
@@ -116,4 +116,50 @@ li {
 .header-nav a:hover {
     background: #676767;
     background-color: rgba(255,255,255,.2);
+}
+
+/* ----------------------------------------------------------
+  Content
+---------------------------------------------------------- */
+
+.sep {
+    z-index: 1;
+    position: relative;
+    margin: $header-margin 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.sep:before,
+.sep:after {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    margin-top: -1px;
+    background-color: #CCC;
+}
+
+.sep:before {
+    right: 50%;
+    margin-right: 100px;
+}
+
+.sep:after {
+    left: 50%;
+    margin-left: 100px;
+}
+
+.sep .illu {
+    @extend .ir;
+}
+
+.sep .illu-x {
+    @include retina-sprite(logo-sep);
+}
+
+.sep .illu-los {
+    @include retina-sprite(logo-sep2);
 }

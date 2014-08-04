@@ -63,3 +63,5 @@
         </div>
     </div>
 </div>
+<div class="sep"><div class="illu illu-x"></div></div>
+<div class="sep"><div class="illu illu-los"></div></div>
