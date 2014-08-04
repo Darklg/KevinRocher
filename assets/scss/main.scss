@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+  Config
+---------------------------------------------------------- */
+
+/* Vars
+-------------------------- */
+
+$color-main: #001122;
+$color-main--hover: lighten($color-main, 20);
+$header-margin: 80px;
+
+/* Directories
+-------------------------- */
+
+$sprites: sprite-map("main-sprite/*.png");       /* :) */
+$sprites2x: sprite-map("main-sprite_2x/*.png");  /* :) */
+
+/* ----------------------------------------------------------
+  Utilities
+---------------------------------------------------------- */
+
+@import "utilities/_plugins.scss";
+@import "utilities/_retina-sprites.scss";
+
+/* ----------------------------------------------------------
+  CSSCommon
+---------------------------------------------------------- */
+
+@import "csscommon/_cssc-default.scss";
+@import "csscommon/_cssc-common.scss";
+@import "csscommon/_cssc-content.scss";
+@import "csscommon/_cssc-layouts.scss";
+@import "csscommon/_cssc-grid.scss";
+
+/* ----------------------------------------------------------
+  Project
+---------------------------------------------------------- */
+
+@import "kevin-rocher/_base.scss";
+@import "kevin-rocher/_welcome.scss";
+@import "kevin-rocher/_about.scss";

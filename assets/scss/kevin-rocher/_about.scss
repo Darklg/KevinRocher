@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+  About
+---------------------------------------------------------- */
+
+.about-content {
+    padding: $header-margin 0;
+}
+
+/* Tabs
+-------------------------- */
+
+/* Triggers */
+
+.about-tabs {
+    margin-bottom: $header-margin/2;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-tabs a {
+    display: inline-block;
+    margin: 0 10px;
+    border-bottom: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 900;
+    vertical-align: 0;
+    color: $color-main--hover;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.about-tabs a.is-current,
+.about-tabs a:hover,
+.about-tabs a:focus {
+    border-color: $color-main--hover;
+}
+
+.about-tabs a.is-current {
+    border-color: $color-main;
+    color: $color-main;
+}
+
+/* Content */
+
+.about-contents {
+    z-index: 1;
+    position: relative;
+    min-height: 200px;
+}
+
+.about-contents > div {
+    display: none;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.about-contents > div.is-current {
+    display: block;
+}
+
+@media(min-width:1023px) {
+    .about-contents > div {
+        display: block!important;
+        visibility: hidden;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: -50px;
+        width: 100%;
+        opacity: 0;
+    }
+
+    .about-contents > div.is-current {
+        visibility: visible;
+        left: 0;
+        max-height: 1000px;
+        opacity: 0.9999;
+    }
+}
+
+/* Common
+-------------------------- */
+
+.about-illu {
+    padding: 20px 30px;
+    text-align: right;
+}
+
+.col-50p + .col-50p .about-illu {
+    text-align: left;
+}
+
+/* A propos
+-------------------------- */
+
+/* Parcours
+-------------------------- */
+
+/* ----------------------------------------------------------
+  A Propos
+---------------------------------------------------------- */
+
+/* ----------------------------------------------------------
+  Parcours
+---------------------------------------------------------- */

@@ -1,2 +1,4 @@
 _dev
 _prod
+.DS_Store
+.sass-cache
