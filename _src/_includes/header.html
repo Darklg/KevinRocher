@@ -1,4 +1,19 @@
-<header>
-    <h1>{{ site.name }}</h1>
-    <p>{{ site.description }}</p>
+<header class="main-header">
+    <div class="cover" id="main-header-cover"></div>
+    <h1 class="main-title" id="main-header-title">
+        <strong>{{ site.name }}</strong><br />
+        {{ site.description }}
+    </h1>
 </header>
+<div id="header-wrapper" class="fixed-header-wrapper">
+    <div class="fixed-header">
+        <div id="toggle-menu" class="toggle-menu" title="Yep, double burger">Menu</div>
+        <nav id="main-links" class="main-links">
+            <a href="#header-wrapper">About</a>
+            <a href="#projects">Projets</a>
+            <a href="#skills">Compétences</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Me contacter</a>
+        </nav>
+    </div>
+</div>

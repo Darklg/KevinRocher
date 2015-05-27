@@ -1,5 +1,5 @@
 name: Kévin Rocher
-description: Développeur Front-End / WordPress Freelance
+description: Développeur Front-End Freelance
 
 source: _src
 destination: _prod
@@ -7,9 +7,29 @@ markdown: kramdown
 pygments: true
 
 js_assets :
+  - assets/js/app/utils.js
   - assets/js/app/functions.js
   - assets/js/app/events.js
 
 css_assets :
-  - assets/css/dev--cssc-default.css
-  - assets/css/dev--cssc-common.css
+  - assets/css/main.css
+
+# Contact
+availability: à partir d'Août 2015
+email: kevin.rocher@gmail.com
+social_networks :
+  - site : Github
+    id: github
+    url: https://github.com/darklg
+  - site : Viadeo
+    id: viadeo
+    url: https://www.viadeo.com/profile/002vcmjwhx70koj
+  - site : Linkedin
+    id: linkedin
+    url: https://fr.linkedin.com/in/kevinrocher
+  - site : Twitter
+    id: twitter
+    url: https://twitter.com/darklg
+  - site : Instagram
+    id: instagram
+    url: https://instagram.com/darklg
