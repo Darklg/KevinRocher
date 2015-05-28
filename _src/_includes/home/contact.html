@@ -21,7 +21,7 @@
                     {% assign counter = 500 %}
                     {% for network in site.social_networks %}
                     <li data-delay="{{ counter }}">
-                        <a target="_blank" class="icon icon_{{ network.id }}" href="{{ network.url }}" title="{{ network.site }}" title="{{ network.site }}"></a>
+                        <a target="_blank" class="icon icon_{{ network.id }}" href="{{ network.url }}" title="{{ network.site }}"></a>
                     </li>
                     {% assign counter = counter | minus:100 %}
                     {% endfor %}
