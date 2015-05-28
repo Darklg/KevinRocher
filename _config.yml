@@ -1,5 +1,7 @@
 name: Kévin Rocher
 description: Développeur Front-End Freelance
+long_description: Développeur Front-End Freelance / WordPress à Paris
+prod_url: http://www.kevin-rocher.fr/
 
 source: _src
 destination: _prod
