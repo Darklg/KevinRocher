@@ -27,7 +27,10 @@ var set_mainmenu = function() {
         menuLinks[i].addEventListener('click', function(e) {
             Element.removeClass(document.body, 'has-main-menu-open');
             window.eventPreventDefault(e);
-            smoothScrollTo(this.getAttribute('href').replace('\#', ''), 200);
+            smoothScrollTo(this.getAttribute('href').replace('\#', ''), {
+                duration: 200,
+                offset: 5
+            });
         }, false);
     }
 };

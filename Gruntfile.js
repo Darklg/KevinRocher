@@ -24,6 +24,7 @@ module.exports = function(grunt) {
                 src: [
                     prodJS + 'app/utils.js',
                     prodJS + 'app/functions.js',
+                    prodJS + 'app/vanilla-scrollanims.js',
                     prodJS + 'app/events.js',
                 ],
                 dest: prodJS + 'main-tmp.js'

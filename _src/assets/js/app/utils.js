@@ -184,19 +184,22 @@ window.eventPreventDefault = function(event) {
 ---------------------------------------------------------- */
 
 var smoothScrollToIsScroll = false;
-var smoothScrollTo = function(id, duration) {
+var smoothScrollTo = function(id, options) {
     if (smoothScrollToIsScroll) {
         // Prevent double launch
         return false;
     }
-    duration = duration || 300;
+
     var pas = 3,
+        duration = options.duration || 300,
+        offset = options.offset || 0,
         interval = false,
         stepsNb = duration / pas,
         scrollTop = getBodyScrollTop(),
         distance = scrollTop,
         bounds = getElementOffset(document.getElementById(id)),
-        diff = bounds.top - scrollTop,
+        targetScroll = bounds.top + offset,
+        diff = targetScroll - scrollTop,
         stepScroll = diff / stepsNb;
 
     /* Launch scroll */
@@ -207,9 +210,9 @@ var smoothScrollTo = function(id, duration) {
     function scrollFunction() {
         distance += stepScroll;
         window.scrollTo(0, distance);
-        var stopScroll = (stepScroll >= 0 && distance >= bounds.top) || (stepScroll < 0 && distance <= bounds.top);
+        var stopScroll = (stepScroll > 0 && distance >= targetScroll) || (stepScroll <= 0 && distance <= targetScroll);
         if (distance < 0 || stopScroll) {
-            window.scrollTo(0, bounds.top);
+            window.scrollTo(0, targetScroll);
             clearInterval(interval);
             smoothScrollToIsScroll = false;
         }

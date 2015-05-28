@@ -4,6 +4,10 @@
             <h2 class="section-title">Me contacter</h2>
             <p>Et si on travaillait ensemble ?</p>
         </header>
+        <p>
+            <strong>Ecrivez-moi</strong><br />
+            <a class="email" href="mailto:{{ site.email }}" title="Cliquer sur ce lien est une bonne idée.">{{ site.email }}</a>
+        </p>
         <div class="cssc-grid fluid-grid contact-grid">
             <div class="col-50p">
                 <p>
@@ -14,21 +18,15 @@
             <div class="col-50p">
                 <p class="social-desc">Je raconte ma vie par ici</p>
                 <ul class="social-networks">
+                    {% assign counter = 500 %}
                     {% for network in site.social_networks %}
-                    <li>
+                    <li data-delay="{{ counter }}">
                         <a target="_blank" class="icon icon_{{ network.id }}" href="{{ network.url }}" title="{{ network.site }}" title="{{ network.site }}"></a>
                     </li>
+                    {% assign counter = counter | minus:100 %}
                     {% endfor %}
                 </ul>
             </div>
-        </div>
-        <p>
-            <strong>Ecrivez-moi</strong><br />
-            <a class="email" href="mailto:{{ site.email }}" title="Cliquer sur ce lien est une bonne idée.">{{ site.email }}</a>
-        </p>
-
-        <div class="hellomynameiskevin">
-            <img src="assets/images/content/avatar.jpg" alt="{{ site.name }} {{ site.description }}" />
         </div>
     </div>
 </section>

@@ -30,6 +30,22 @@ body {
 }
 
 /* ----------------------------------------------------------
+  Animations
+---------------------------------------------------------- */
+
+.has-scrollanim {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.has-scrollanim[data-active] {
+    opacity: 0.9999;
+}
+
+/* ----------------------------------------------------------
   Links
 ---------------------------------------------------------- */
 
@@ -248,6 +264,29 @@ h3 {
     color: #333;
 }
 
+.section-header .section-title,
+.section-header p {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.section-header[data-active] .section-title {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.section-header[data-active] .section-title,
+.section-header[data-active] p {
+    opacity: 0.9999;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+}
+
 /* ----------------------------------------------------------
   Header
 ---------------------------------------------------------- */
@@ -428,8 +467,60 @@ h3 {
   About
 ---------------------------------------------------------- */
 
-.cc-about p {
+.about-content p {
     text-align: justify;
+}
+
+.about-content p {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.about-content p[data-active] {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.about-content {
+    z-index: 1;
+    position: relative;
+    padding-left: 12em;
+}
+
+.hellomynameiskevin img {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 10em;
+    margin: auto;
+    border-radius: 99px;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+
+.hellomynameiskevin img[data-active] {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+@media($mobile_only) {
+    .hellomynameiskevin img {
+        opacity: 0.99999;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    .about-content {
+        padding-left: 0;
+    }
+
+    .hellomynameiskevin img {
+        display: block;
+        position: static;
+        margin: 0 auto 2em;
+    }
 }
 
 /* ----------------------------------------------------------
@@ -475,6 +566,16 @@ h3 {
     margin: 0;
     font: inherit;
     font-family: $font-main;
+}
+
+.projects-list li {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+
+.projects-list li[data-active] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
 }
 
 .projects-list li + li h4 {
@@ -538,6 +639,13 @@ h3 {
     border-radius: 2px;
     vertical-align: middle;
     background: #F0F0F0;
+    -webkit-transform: translate3d(-5px,-5px,0);
+    transform: translate3d(-5px,-5px,0);
+}
+
+.skills-list li[data-active] {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 
 /* ----------------------------------------------------------
@@ -551,12 +659,22 @@ h3 {
 .clients-list > * {
     display: inline-block;
     width: 33.333%;
-    vertical-align: middle;
+    vertical-align: top;
+}
+
+.clients-list li {
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
+}
+
+.clients-list li[data-active] {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 
 .clients-list li a {
     display: block;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 .clients-list li img {
@@ -566,6 +684,11 @@ h3 {
 
 .clients-list li .logo-cafffeine {
     max-height: 3em;
+}
+
+.clients-list li .logo-maestrooo {
+    margin-top: 0.3em;
+    max-width: 8em;
 }
 
 @media($mobile_only) {
@@ -594,6 +717,10 @@ h3 {
     margin: 2em auto;
 }
 
+.contact-grid {
+    margin: 3em auto;
+}
+
 .social-networks li {
     display: inline-block;
     margin-right: 0.5em;
@@ -619,15 +746,6 @@ h3 {
     color: $color-main;
 }
 
-.hellomynameiskevin {
-    margin-top: 10em;
-}
-
-.hellomynameiskevin img {
-    height: 10em;
-    border-radius: 99px;
-}
-
 @media($mobile_only) {
     .cc-contact p {
         margin: 1em auto;
@@ -648,10 +766,6 @@ h3 {
 
     .social-networks li {
         font-size: 2em;
-    }
-
-    .hellomynameiskevin {
-        margin-top: 5em;
     }
 }
 

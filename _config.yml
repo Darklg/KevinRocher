@@ -9,10 +9,53 @@ pygments: true
 js_assets :
   - assets/js/app/utils.js
   - assets/js/app/functions.js
+  - assets/js/app/vanilla-scrollanims.js
   - assets/js/app/events.js
 
 css_assets :
   - assets/css/main.css
+
+# Skills
+skills :
+  - Intégration HTML5 / CSS3
+  - Développement Front-End
+  - Création de thèmes WordPress
+  - Développement de plugins WordPress
+  - Intégration de thèmes Magento
+  - Intégration et envoi de newsletters
+  - Webperf
+  - Accessibilité
+  - SEO
+  - Responsive
+  - Joe Dassin
+  - JavaScript
+  - jQuery
+  - AJAX
+  - PHP
+  - MySQL
+  - Git
+
+# Clients
+clients :
+  - name : Colorz
+    id : colorz
+    url : http://www.colorz.fr
+  - name : Soon by Kaliop
+    id : soon
+    url : http://www.agence-soon.fr
+  - name : Nouveau Numéro
+    id : nouveau-numero
+    url : http://www.nouveaunumero.com
+  - name : Starloo Graphic
+    id : starloo
+    url : http://www.starloographic.com
+  - name : Maestrooo
+    id : maestrooo
+    url : http://www.maestrooo.com
+  - name : Cafffeine
+    id : cafffeine
+    url : http://www.cafffeine.com
+
 
 # Contact
 availability: à partir d'Août 2015

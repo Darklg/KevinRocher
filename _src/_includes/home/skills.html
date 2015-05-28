@@ -5,23 +5,9 @@
             <p>Les sujets sur lesquels je vais<br class="desktop-hide" /> pouvoir vous aider.</p>
         </header>
         <ul class="skills-list">
-            <li>Intégration HTML5 / CSS3</li>
-            <li>Développement Front-End</li>
-            <li>Création de thèmes WordPress</li>
-            <li>Développement de plugins WordPress</li>
-            <li>Intégration de thèmes Magento</li>
-            <li>Intégration et envoi de newsletters</li>
-            <li>Webperf</li>
-            <li>Accessibilité</li>
-            <li>SEO</li>
-            <li>Responsive</li>
-            <li title="Je fais une excellente imitation.">Joe Dassin</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>AJAX</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>Git</li>
+        {% assign counter = 0 %}
+        {% for skill in site.skills %}<li data-delay="{{ counter }}">{{ skill }}</li>{% assign counter = counter | plus:50 %}
+        {% endfor %}
         </ul>
     </div>
 </section>
