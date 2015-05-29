@@ -9,7 +9,9 @@ window.domReady(function() {
         });
 
     for (var i = 0, len = scrollItems.length; i < len; i++) {
-        scrollItems[i].className += " has-scrollanim";
+        if (scrollItems[i].className != 'has-scrollanim') {
+            scrollItems[i].className += " has-scrollanim";
+        }
     }
 
 });
