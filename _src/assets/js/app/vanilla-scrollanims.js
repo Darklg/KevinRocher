@@ -1,14 +1,14 @@
 /*
  * Plugin Name: Vanilla-JS Scroll Animations
- * Version: 0.2
+ * Version: 0.5.1
  * Plugin URL: https://github.com/Darklg/JavaScriptUtilities
  * JavaScriptUtilities Vanilla-JS may be freely distributed under the MIT license.
  */
 
 /*
-* var scrollItems = document.querySelectorAll('img[height]');
-* var scrollAnim = new dkJSUScrollAnims(scrollItems, {});
-*/
+ * var scrollItems = document.querySelectorAll('img[height]');
+ * var scrollAnim = new dkJSUScrollAnims(scrollItems, {});
+ */
 
 var dkJSUScrollAnims = function(items, opt) {
     'use strict';
@@ -50,7 +50,8 @@ var dkJSUScrollAnims = function(items, opt) {
 
     this.getOptions = function(opt) {
         var options = {
-            offsetY: -100
+            offsetY: -100,
+            attributeName: 'active'
         };
 
         if (typeof opt != 'object') {
@@ -61,17 +62,36 @@ var dkJSUScrollAnims = function(items, opt) {
             options.offsetY = parseInt(opt.offsetY, 10);
         }
 
+        if (opt.attributeName) {
+            options.attributeName = opt.attributeName;
+        }
+
         return options;
     };
 
     this.getItems = function(items) {
-        var finalItems = [];
+        var finalItems = [],
+            tmpItem,
+            tmpChildSelector,
+            tmpUseChildren;
+
         for (var i = 0, len = items.length; i < len; i++) {
             if (items[i]) {
-                finalItems.push({
+                tmpItem = {
                     el: items[i],
                     isVisible: 0
-                });
+                };
+                tmpUseChildren = items[i].getAttribute('data-usechildren');
+                tmpChildSelector = items[i].getAttribute('data-childselector');
+                if (tmpUseChildren && tmpUseChildren == '1' && items[i].hasChildNodes()) {
+                    tmpItem.children = items[i].children;
+                    // Use a special selector for children if specified
+                    if (tmpChildSelector) {
+                        tmpItem.children = items[i].querySelectorAll(tmpChildSelector);
+                    }
+                }
+
+                finalItems.push(tmpItem);
             }
         }
         return finalItems;
@@ -122,15 +142,29 @@ var dkJSUScrollAnims = function(items, opt) {
     this.triggerItem = function(item) {
 
         // Get animation delay on item
-        var delay = 0;
-        if (item.el.getAttribute('data-delay') && isNumber(item.el.getAttribute('data-delay'))) {
-            delay = parseInt(item.el.getAttribute('data-delay'), 10);
+        var delay = 0,
+            dataDelay = item.el.getAttribute('data-delay');
+        if (dataDelay && isNumber(dataDelay)) {
+            delay = parseInt(dataDelay, 10);
         }
 
-        // Add data active
-        setTimeout(function() {
-            item.el.setAttribute('data-active', '1');
-            item.isActive = 1;
+        if (item.children) {
+            // Activate each children with a delay
+            for (var i = 0, len = item.children.length; i < len; i++) {
+                self.activateElement(item.children[i], i * delay);
+            }
+        }
+        else {
+            self.activateElement(item.el, delay);
+        }
+
+    };
+
+    // Set Activate item
+    this.activateElement = function(el, delay) {
+        setTimeout(function activateelementtimeout() {
+            el.setAttribute('data-' + self.opt.attributeName, '1');
+            triggerEvent(el, 'activescrollanim');
         }, delay);
     };
 
@@ -184,6 +218,23 @@ var dkJSUScrollAnims = function(items, opt) {
 
     function isNumber(n) {
         return !isNaN(parseFloat(n)) && isFinite(n);
+    }
+
+    function triggerEvent(el, eventName, parameters) {
+        var e = false;
+        parameters = parameters || {};
+        if (document.createEventObject) {
+            e = document.createEventObject();
+            e.button = 1;
+            e.jsuparams = parameters;
+            return el.fireEvent('on' + eventName, e);
+        }
+        else {
+            e = document.createEvent('HTMLEvents');
+            e.initEvent(eventName, true, false);
+            e.jsuparams = parameters;
+            return el.dispatchEvent(e);
+        }
     }
 
     /* ----------------------------------------------------------
