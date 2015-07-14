@@ -1,8 +1,15 @@
+function is_touch_device() {
+    return 'ontouchstart' in window || 'onmsgesturechange' in window;
+};
+
 /* ----------------------------------------------------------
   Add a nice effect on the separators on mouseover
 ---------------------------------------------------------- */
 
 var set_separators = function() {
+    if (is_touch_device()) {
+        return false;
+    }
     var separators = document.querySelectorAll(".main-sep");
     for (var i = 0; i < separators.length; i++) {
         separators[i].addEventListener('mouseover', function(e) {
