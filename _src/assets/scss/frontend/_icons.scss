@@ -3,10 +3,10 @@
 
 @font-face {
 	font-family:"icons";
-	src:url("../fonts/icons/icons.eot?f5b636b44fbbeb0263d2554c3c5db7cf");
+	src:url("../fonts/icons/icons.eot?c113d7da41042d1ce476ab53003d70ba");
 	src:url("../fonts/icons/icons.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/icons/icons.woff?f5b636b44fbbeb0263d2554c3c5db7cf") format("woff"),
-		url("../fonts/icons/icons.ttf?f5b636b44fbbeb0263d2554c3c5db7cf") format("truetype");
+		url("../fonts/icons/icons.woff?c113d7da41042d1ce476ab53003d70ba") format("woff"),
+		url("../fonts/icons/icons.ttf?c113d7da41042d1ce476ab53003d70ba") format("truetype");
 	font-weight:normal;
 	font-style:normal;
 }
@@ -30,31 +30,36 @@
 // Icons
 
 
-.icon_chain:before {
+.icon_blog:before {
 	content:"\f101";
 }
 
 
-.icon_github:before {
+.icon_chain:before {
 	content:"\f102";
 }
 
 
-.icon_instagram:before {
+.icon_github:before {
 	content:"\f103";
 }
 
 
-.icon_linkedin:before {
+.icon_instagram:before {
 	content:"\f104";
 }
 
 
-.icon_twitter:before {
+.icon_linkedin:before {
 	content:"\f105";
 }
 
 
-.icon_viadeo:before {
+.icon_twitter:before {
 	content:"\f106";
+}
+
+
+.icon_viadeo:before {
+	content:"\f107";
 }

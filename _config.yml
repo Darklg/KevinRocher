@@ -75,6 +75,9 @@ social_networks :
   - site : Twitter
     id: twitter
     url: https://twitter.com/darklg
+  - site : Blog
+    id: blog
+    url: http://darklg.me
   - site : Instagram
     id: instagram
     url: https://instagram.com/darklg
