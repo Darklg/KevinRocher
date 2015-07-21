@@ -1,6 +1,6 @@
 /*
  * Plugin Name: Vanilla-JS Scroll Animations
- * Version: 0.5.1
+ * Version: 0.6.1
  * Plugin URL: https://github.com/Darklg/JavaScriptUtilities
  * JavaScriptUtilities Vanilla-JS may be freely distributed under the MIT license.
  */
@@ -15,7 +15,7 @@ var dkJSUScrollAnims = function(items, opt) {
 
     var self = this;
 
-    if (!document.addEventListener || !items || !window.hasOwnProperty('innerHeight')) {
+    if (!document.addEventListener || !items) {
         return false;
     }
 
@@ -51,7 +51,8 @@ var dkJSUScrollAnims = function(items, opt) {
     this.getOptions = function(opt) {
         var options = {
             offsetY: -100,
-            attributeName: 'active'
+            attributeName: 'active',
+            afterGetItems: function(el) {}
         };
 
         if (typeof opt != 'object') {
@@ -65,36 +66,59 @@ var dkJSUScrollAnims = function(items, opt) {
         if (opt.attributeName) {
             options.attributeName = opt.attributeName;
         }
+        if (opt.afterGetItems && typeof opt.afterGetItems == 'function') {
+            options.afterGetItems = opt.afterGetItems;
+        }
+
+
 
         return options;
     };
 
     this.getItems = function(items) {
         var finalItems = [],
-            tmpItem,
-            tmpChildSelector,
-            tmpUseChildren;
+            tmpItem;
 
         for (var i = 0, len = items.length; i < len; i++) {
             if (items[i]) {
-                tmpItem = {
-                    el: items[i],
-                    isVisible: 0
-                };
-                tmpUseChildren = items[i].getAttribute('data-usechildren');
-                tmpChildSelector = items[i].getAttribute('data-childselector');
-                if (tmpUseChildren && tmpUseChildren == '1' && items[i].hasChildNodes()) {
-                    tmpItem.children = items[i].children;
-                    // Use a special selector for children if specified
-                    if (tmpChildSelector) {
-                        tmpItem.children = items[i].querySelectorAll(tmpChildSelector);
-                    }
-                }
-
+                tmpItem = this.getItem(items[i]);
+                this.markItemAsAnimationReady(tmpItem);
                 finalItems.push(tmpItem);
             }
         }
         return finalItems;
+    };
+
+    this.getItem = function(item) {
+        var tmpItem = {
+                el: item,
+                isVisible: 0
+            },
+            tmpUseChildren = item.getAttribute('data-usechildren'),
+            tmpChildSelector = item.getAttribute('data-childselector');
+
+        if (tmpUseChildren && tmpUseChildren == '1' && item.hasChildNodes()) {
+            tmpItem.children = item.children;
+            // Use a special selector for children if specified
+            if (tmpChildSelector) {
+                tmpItem.children = item.querySelectorAll(tmpChildSelector);
+            }
+        }
+
+        return tmpItem;
+    };
+
+    this.markItemAsAnimationReady = function(item) {
+        if (item.children) {
+            for (var i = 0, len = item.children.length; i < len; i++) {
+                item.children[i].setAttribute('data-hasscrollanim', '1');
+                this.opt.afterGetItems(item.children[i]);
+            }
+        }
+        else {
+            item.el.setAttribute('data-hasscrollanim', '1');
+            this.opt.afterGetItems(item.el);
+        }
     };
 
     this.getPositionForItem = function(item) {
@@ -121,7 +145,8 @@ var dkJSUScrollAnims = function(items, opt) {
 
     this.scrollEvent = function() {
         // Get top border
-        var border = window.innerHeight + window.pageYOffset + self.opt.offsetY;
+        var innerHeight = (window.innerHeight || document.body.innerHeight),
+            border = innerHeight + window.pageYOffset + self.opt.offsetY;
 
         // Set active items
         self.setActiveItems(border);

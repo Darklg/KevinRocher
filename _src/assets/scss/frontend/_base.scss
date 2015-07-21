@@ -12,6 +12,10 @@ body {
 }
 
 @media($mobile_only) {
+    .mobile-hide {
+        display: none;
+    }
+
     body {
         font-size: 13px;
     }
@@ -33,7 +37,7 @@ body {
   Animations
 ---------------------------------------------------------- */
 
-.has-scrollanim {
+[data-hasscrollanim] {
     opacity: 0;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -41,7 +45,7 @@ body {
     transform: translateZ(0);
 }
 
-.has-scrollanim[data-active] {
+[data-hasscrollanim][data-active] {
     opacity: 0.9999;
 }
 

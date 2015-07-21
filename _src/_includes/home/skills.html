@@ -4,10 +4,8 @@
             <h2 class="section-title">Compétences</h2>
             <p>Les sujets sur lesquels je vais<br class="desktop-hide" /> pouvoir vous aider.</p>
         </header>
-        <ul class="skills-list">
-        {% assign counter = 0 %}
-        {% for skill in site.skills %}<li data-delay="{{ counter }}">{{ skill }}</li>{% assign counter = counter | plus:50 %}
-        {% endfor %}
+        <ul class="skills-list" data-usechildren="1" data-delay="50">
+        {% for skill in site.skills %}<li>{{ skill }}</li>{% endfor %}
         </ul>
     </div>
 </section>
