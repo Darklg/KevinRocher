@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+  About
+---------------------------------------------------------- */
+
+.about-content p {
+    text-align: justify;
+}
+
+.about-content p {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.about-content p[data-active] {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.about-content {
+    z-index: 1;
+    position: relative;
+    padding-left: 12em;
+}
+
+.hellomynameiskevin img,
+.contact-avatar img {
+    width: 10em;
+    border-radius: 99px;
+}
+
+.contact-avatar img {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.hellomynameiskevin img {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+
+.contact-avatar img[data-active],
+.hellomynameiskevin img[data-active] {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+@media($mobile_only) {
+    .about-content {
+        padding-left: 0;
+    }
+
+    .contact-avatar img,
+    .hellomynameiskevin img {
+        display: block;
+        position: static;
+        margin: 0 auto 2em;
+        opacity: 0.99999;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}

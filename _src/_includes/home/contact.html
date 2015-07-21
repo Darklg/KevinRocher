@@ -12,7 +12,7 @@
             <div class="cssc-grid fluid-grid contact-grid">
                 <div class="col-50p">
                     <p>
-                        Je suis disponible pour des missions<br />
+                        {{ site.availabilityLabel }}<br />
                         <strong>{{ site.availability }}</strong>
                     </p>
                 </div>
@@ -29,6 +29,9 @@
                     </ul>
                 </div>
             </div>
+            <p class="contact-avatar">
+                <img width="150" height="150" class="has-scrollanim" data-delay="100" src="assets/images/content/kevin-rocher-developpeur-front-end-freelance.jpg" alt="{{ site.name }} {{ site.description }}" />
+            </p>
         </div>
     </div>
 </section>

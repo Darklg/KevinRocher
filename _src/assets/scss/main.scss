@@ -72,8 +72,15 @@ $sprites2x: sprite-map("css-sprite-2x/*.png", $spacing: 10px);  /* :) */
   Front-End
 ---------------------------------------------------------- */
 
-@import "frontend/_icons.scss";
-@import "frontend/_fonts.scss";
-@import "frontend/_forms.scss";
-@import "frontend/_base.scss";
+@import "frontend/icons";
+@import "frontend/fonts";
+@import "frontend/forms";
+@import "frontend/base";
+@import "frontend/base/header";
+@import "frontend/base/about";
+@import "frontend/base/projects";
+@import "frontend/base/skills";
+@import "frontend/base/clients";
+@import "frontend/base/contact";
+@import "frontend/base/footer";
 

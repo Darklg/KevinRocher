@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+  Skills
+---------------------------------------------------------- */
+
+.skills-list {
+    text-align: center;
+}
+
+.skills-list li {
+    display: inline-block;
+    margin: 0 0.5em 1em;
+    padding: 0.2em 0.5em;
+    border-radius: 2px;
+    vertical-align: middle;
+    background: #F0F0F0;
+    -webkit-transform: translate3d(-5px,-5px,0);
+    transform: translate3d(-5px,-5px,0);
+}
+
+.skills-list li[data-active] {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}

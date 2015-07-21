@@ -6,12 +6,12 @@ prod_url: http://www.kevin-rocher.fr/
 source: _src
 destination: _prod
 markdown: kramdown
-pygments: true
 
 js_assets :
   - assets/js/app/utils.js
   - assets/js/app/functions.js
   - assets/js/app/vanilla-scrollanims.js
+  - assets/js/app/vanilla-tiptaptip.js
   - assets/js/app/events.js
 
 css_assets :
@@ -27,8 +27,8 @@ skills :
   - Intégration et envoi de newsletters
   - Webperf
   - Accessibilité
-  - SEO
   - Responsive
+  - SEO
   - Joe Dassin
   - JavaScript
   - jQuery
@@ -60,7 +60,8 @@ clients :
 
 
 # Contact
-availability: à partir d'Août 2015
+availabilityLabel: Disponible à partir de
+availability: Septembre 2015
 email: kevin.rocher@gmail.com
 social_networks :
   - site : Github
@@ -81,3 +82,7 @@ social_networks :
   - site : Instagram
     id: instagram
     url: https://instagram.com/darklg
+
+# Footer
+footerQuote: "&ldquo; Stay Hungry, Stay Foolish &rdquo;"
+footerQuoteAuthor: "Steve Jobs"
