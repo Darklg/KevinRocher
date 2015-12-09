@@ -61,15 +61,12 @@ clients :
 
 # Contact
 availabilityLabel: Disponible à partir de
-availability: Fin Novembre 2015
+availability: Février 2016
 email: kevin.rocher@gmail.com
 social_networks :
   - site : Github
     id: github
     url: https://github.com/darklg
-  - site : Viadeo
-    id: viadeo
-    url: https://www.viadeo.com/profile/002vcmjwhx70koj
   - site : Linkedin
     id: linkedin
     url: https://fr.linkedin.com/in/kevinrocher
