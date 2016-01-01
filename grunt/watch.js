@@ -1,4 +1,7 @@
 module.exports = {
+    options: {
+        spawn: false
+    },
     css: {
         files: [
             '_src/assets/scss/*.scss',
