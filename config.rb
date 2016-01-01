@@ -1,4 +1,3 @@
-require File.join(File.dirname(__FILE__), "/_src/assets/scss/utilities/list-files.rb")
 http_path = "/"
 css_dir = "_src/assets/css"
 sass_dir = "_src/assets/scss"

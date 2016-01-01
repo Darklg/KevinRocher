@@ -41,28 +41,12 @@ $desktop_only: "min-width:"+$desktop-min;
 $large_excluded: "max-width:"+$desktop-max;
 $large_only: "min-width:"+$large-min;
 
-/* Sprites
--------------------------- */
-
-$sprites: sprite-map("css-sprite/*.png", $spacing: 10px);       /* :) */
-$sprites2x: sprite-map("css-sprite-2x/*.png", $spacing: 10px);  /* :) */
-
-/* ----------------------------------------------------------
-  Utilities
----------------------------------------------------------- */
-
-@import "utilities/_retina-sprites.scss";
-@import "utilities/_plugins.scss";
-
 /* ----------------------------------------------------------
   CSSCommon
 ---------------------------------------------------------- */
 
 @import "csscommon/components/default";
 @import "csscommon/components/common";
-@import "csscommon/components/common/blockmedia";
-@import "csscommon/components/common/imagereplace";
-@import "csscommon/components/content";
 @import "csscommon/components/grid";
 @import "csscommon/components/layouts";
 @import "csscommon/components/print";
