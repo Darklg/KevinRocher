@@ -16,4 +16,10 @@ window.domReady(function() {
         q.addEventListener('activescrollanim', tiptap.launch, 1);
     }
 
+    /* Correct date in copyright */
+    (function(){
+        var d = new Date;
+        document.getElementById('current-year').innerHTML = d.getFullYear();
+    }());
+
 });
