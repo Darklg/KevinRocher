@@ -3,5 +3,7 @@ module.exports = {
         base: '_prod',
         branch: 'prod'
     },
-    src: '**/*'
+    prodFront: {
+        src: '**/*'
+    }
 };
