@@ -6,7 +6,7 @@
 <!--[if !IE]><!--><html dir="ltr" lang="fr-FR"><!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.name }} | {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.name }} | {{ site.long_description }}</title>
 {% if site.destination == '_dev' %}
     {% for css in site.css_assets %}<link href="{{ css }}" rel="stylesheet" type="text/css" />{% endfor %}
     {% for js in site.js_assets %}<script src="{{ js }}"></script>{% endfor %}
