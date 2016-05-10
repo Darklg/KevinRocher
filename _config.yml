@@ -19,23 +19,23 @@ css_assets :
 
 # Skills
 skills :
-  - Intégration HTML5 / CSS3
-  - Développement Front-End
-  - Création de thèmes WordPress
-  - Développement de plugins WordPress
-  - Intégration de thèmes Magento
-  - Intégration et envoi de newsletters
-  - Webperf
+  - Intégration <strong>HTML5</strong> / <strong>CSS3</strong>
+  - Développement <strong>Front-End</strong>
+  - Création de thèmes <strong>WordPress</strong>
+  - Développement de <strong>plugins</strong> WordPress
+  - Intégration <strong>Magento</strong>
   - Accessibilité
+  - Performance
   - Responsive
   - SEO
-  - Joe Dassin
   - JavaScript
   - jQuery
   - AJAX
+  - Joe Dassin
   - PHP
   - MySQL
   - Git
+  - Bash
 
 # Clients
 clients :
