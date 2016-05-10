@@ -62,63 +62,65 @@ a:hover {
     color: darken($color-main,20);
 }
 
-.cc-about p a,
-.contact-content p a,
-.cc-error-404 a,
-.projects-list p a {
-    display: inline-block;
-    z-index: 1;
-    position: relative;
-    vertical-align: 0;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+.cc-process,
+.cc-about,
+.contact-content,
+.cc-error-404,
+.projects-list {
+    p a {
+        display: inline-block;
+        z-index: 1;
+        position: relative;
+        vertical-align: 0;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    p a:after {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        height: 1px;
+        margin: -3px 0 0;
+        border-bottom: 1px solid;
+        opacity: 0;
+        -webkit-transition: margin 0.3s ease,opacity 0.3s ease;
+        transition: margin 0.3s ease,opacity 0.3s ease;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        filter: alpha(opacity=0);
+    }
 }
 
+.cc-process p a:after,
 .cc-about p a:after,
 .contact-content p a:after,
-.cc-error-404 a:after,
-.projects-list p a:after {
-    content: '';
-    z-index: 1;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    height: 1px;
-    margin: -3px 0 0;
-    border-bottom: 1px solid;
-    opacity: 0;
-    -webkit-transition: margin 0.3s ease,opacity 0.3s ease;
-    transition: margin 0.3s ease,opacity 0.3s ease;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    filter: alpha(opacity=0);
-}
-
-.cc-about p a:after,
-.contact-content p a:after,
-.cc-error-404 a:after,
+.cc-error-404 p a:after,
 .projects-list:hover p a:after {
     margin-top: -1px;
     opacity: 0.10;
 }
 
+.cc-process:hover p a:after,
 .cc-about:hover p a:after,
 .contact-content p a:after,
-.cc-error-404 a:after,
+.cc-error-404 p a:after,
 .projects-list p:hover a:after {
     opacity: 0.35;
 }
 
-.cc-about p a:hover,
-.cc-about p a:focus,
-.contact-content p a:hover,
-.contact-content p a:focus,
-.cc-error-404 a:hover,
-.cc-error-404 a:focus,
-.projects-list a:focus,
-.projects-list a:hover {
-    color: $color-hl;
+.cc-process,
+.contact-content,
+.cc-error-404,
+.projects-list,
+.cc-about {
+    a:focus,
+    a:hover {
+        color: $color-hl;
+    }
 }
 
 /* Icons

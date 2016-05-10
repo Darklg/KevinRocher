@@ -56,16 +56,18 @@
 
 @font-face {
 	font-family:"icons";
-	src:url("fonts/icons/icons.eot?f765b4b94105d86f5cdce39b045461a0");
-	src:url("fonts/icons/icons.eot?#iefix") format("embedded-opentype"),
-		url("fonts/icons/icons.woff?f765b4b94105d86f5cdce39b045461a0") format("woff"),
-		url("fonts/icons/icons.ttf?f765b4b94105d86f5cdce39b045461a0") format("truetype");
+	src:url("../../../fonts/icons/icons.eot?75fda21e8ffdefcf7eba4fa963db9f0e");
+	src:url("../../../fonts/icons/icons.eot?#iefix") format("embedded-opentype"),
+		url("../../../fonts/icons/icons.woff?75fda21e8ffdefcf7eba4fa963db9f0e") format("woff"),
+		url("../../../fonts/icons/icons.ttf?75fda21e8ffdefcf7eba4fa963db9f0e") format("truetype");
 	font-weight:normal;
 	font-style:normal;
 }
 
 .icon {
-	font-family:"icons";
+	
+		font-family:"icons";
+	
 	display:inline-block;
 	vertical-align:middle;
 	line-height:1;
@@ -74,7 +76,7 @@
 	speak:none;
 	text-decoration:inherit;
 	text-transform:none;
-	text-rendering:optimizeLegibility;
+	text-rendering:auto;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
 }
@@ -108,8 +110,18 @@
 }
 
 
-.icon_twitter:before {
+.icon_magento:before {
 	content:"\f106";
+}
+
+
+.icon_twitter:before {
+	content:"\f107";
+}
+
+
+.icon_wordpress:before {
+	content:"\f108";
 }
 
 		</style>
@@ -129,7 +141,11 @@
 			
 				<div class="icons__item" data-name="linkedin"><i class="icon icon_linkedin"></i> icon_linkedin</div>
 			
+				<div class="icons__item" data-name="magento"><i class="icon icon_magento"></i> icon_magento</div>
+			
 				<div class="icons__item" data-name="twitter"><i class="icon icon_twitter"></i> icon_twitter</div>
+			
+				<div class="icons__item" data-name="wordpress"><i class="icon icon_wordpress"></i> icon_wordpress</div>
 			
 		</div>
 
@@ -147,7 +163,7 @@
 				e = e || window.event;
 				var name = e.target.getAttribute('data-name') || e.target.parentNode.getAttribute('data-name');
 				document.getElementById('name').innerHTML = name;
-				document.getElementById('name2').innerHTML = name;
+				
 			}
 		})();
 		</script>

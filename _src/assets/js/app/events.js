@@ -5,7 +5,7 @@ window.domReady(function() {
     set_mainmenu();
     set_scroll();
 
-    var scrollItems = document.querySelectorAll('.section-header, .projects-list, .skills-list, .clients-list, .cc-contact p, .hellomynameiskevin img, .about-content p, .social-networks li, .contact-avatar img, .footer q, .footer cite'),
+    var scrollItems = document.querySelectorAll('.section-header, .projects-list, .skills-list, .clients-list, .cc-contact p, .hellomynameiskevin img, .about-content p, .social-networks li, .contact-avatar img, .footer q, .footer cite, .main-title .icons'),
         scrollAnim = new dkJSUScrollAnims(scrollItems, {
             offsetY: -50
         });
