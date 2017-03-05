@@ -11,8 +11,8 @@
     {% for css in site.css_assets %}<link href="{{ css }}" rel="stylesheet" type="text/css" />{% endfor %}
     {% for js in site.js_assets %}<script src="{{ js }}"></script>{% endfor %}
 {% else %}
-    <link href="assets/css/main.css?t={{ site.time | date: '%Y%m%d%H%M%S' }}" rel="stylesheet" />
-    <script src="assets/js/main.js?t={{ site.time | date: '%Y%m%d%H%M%S' }}"></script>
+    <link href="assets/css/main{{ site.time | date: '%Y%m%d%H%M%S' }}.css" rel="stylesheet" />
+    <script src="assets/js/main{{ site.time | date: '%Y%m%d%H%M%S' }}.js"></script>
 {% endif %}
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="{{ site.long_description }}" />

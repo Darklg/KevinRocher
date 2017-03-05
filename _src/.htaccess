@@ -1,4 +1,5 @@
-
-RewriteBase /
 ErrorDocument 404 /404.html
-
+RewriteEngine On
+# Strip out the version number in assets
+# Thanks to http://stackoverflow.com/q/5371264
+RewriteRule ^(.*)\.[\d]+\.(css|js)$ $1.$2 [L]
