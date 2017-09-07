@@ -48,6 +48,9 @@ clients :
   - name : Nouveau Numéro
     id : nouveau-numero
     url : http://www.nouveaunumero.com
+  - name : Upian
+    id : upian
+    url : https://www.upian.com/
   - name : Starloo Graphic
     id : starloo
     url : http://www.starloographic.com
