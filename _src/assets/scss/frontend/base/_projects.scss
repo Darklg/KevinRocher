@@ -68,8 +68,8 @@
 }
 
 .projects-list h4 a:before {
-    @extend .icon_chain;
     @extend .icon;
+    @extend .icon_chain;
     z-index: 1;
     position: absolute;
     top: 5px;
@@ -78,6 +78,11 @@
     opacity: 0;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+
+.projects-list h4.nda a:before {
+    @extend .icon_lock;
+    top: 3px;
 }
 
 .projects-list h4 a:hover:before {
