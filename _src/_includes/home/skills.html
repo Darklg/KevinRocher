@@ -4,8 +4,19 @@
             <h2 class="section-title">Compétences</h2>
             <p>Les sujets sur lesquels je vais<br class="desktop-hide" /> pouvoir vous aider.</p>
         </header>
+        <div class="skills-main">
+            {% for skill in site.big_skills %}
+            <div class="skill-main__item">
+                <h3 class="skill-main__item-title">{{ skill.name }}</h3>
+                <p>{{ skill.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="skills-list__wrapper">
+        <p>Et également :</p>
         <ul class="skills-list" data-usechildren="1" data-delay="50">
         {% for skill in site.skills %}<li>{{ skill }}</li>{% endfor %}
         </ul>
+        </div>
     </div>
 </section>

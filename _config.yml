@@ -18,14 +18,20 @@ css_assets :
   - assets/css/main.css
 
 # Skills
+
+big_skills :
+  - name : Intégration Magento 1 & 2
+    description : Je m'occupe du Front-End de votre boutique Magento avec un <strong>thème</strong> créé spécifiquement pour votre projet, des <strong>installers</strong> pour votre contenu initial, et je vous aide à trouver la meilleure solution pour votre contenu avancé ( Blocks, intégration avec WordPress, etc ).
+  - name : Développement de plugins WordPress
+    description : Je développe vos besoins spécifiques pour WordPress, tels que de la <strong>gestion de flux</strong>, des <strong>interfaçages</strong> avec des API spécifiques, ou tout simplement une fonctionnalité qui vous manque.
+  - name : Performances Front-End
+    description : Après un audit de votre site, je vous propose les meilleures pistes pour améliorer la <strong>vitesse de chargement</strong> et le <strong>ressenti</strong> de performance pour vos visiteurs, et je vous aide ensuite à les déployer.
+
 skills :
   - Intégration <strong>HTML5</strong> / <strong>CSS3</strong>
   - Développement <strong>Front-End</strong>
   - Création de thèmes <strong>WordPress</strong>
-  - Développement de <strong>plugins</strong> WordPress
-  - Intégration <strong>Magento</strong>
   - Accessibilité
-  - Performance
   - Responsive
   - SEO
   - JavaScript

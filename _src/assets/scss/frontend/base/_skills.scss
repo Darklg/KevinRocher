@@ -4,8 +4,23 @@
   Skills
 ---------------------------------------------------------- */
 
-.skills-list {
+/* Big
+-------------------------- */
+
+.skill-main__item {
+    margin-bottom: 2em;
     text-align: center;
+}
+
+/* List
+-------------------------- */
+
+.skills-list__wrapper {
+    text-align: center;
+}
+
+.skills-list__wrapper p {
+    margin: 3em 2em 2em;
 }
 
 .skills-list li {
