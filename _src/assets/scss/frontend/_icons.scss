@@ -3,12 +3,12 @@
 
 @font-face {
 	font-family:"icons";
-	src:url("../fonts/icons/icons.eot?14e0b7a0c82267078625087d23be2cf3");
+	src:url("../fonts/icons/icons.eot?de32f8de2d41ab3031efdf48131733f1");
 	src:url("../fonts/icons/icons.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/icons/icons.woff2?14e0b7a0c82267078625087d23be2cf3") format("woff2"),
-		url("../fonts/icons/icons.woff?14e0b7a0c82267078625087d23be2cf3") format("woff"),
-		url("../fonts/icons/icons.ttf?14e0b7a0c82267078625087d23be2cf3") format("truetype"),
-		url("../fonts/icons/icons.svg?14e0b7a0c82267078625087d23be2cf3#icons") format("svg");
+		url("../fonts/icons/icons.woff2?de32f8de2d41ab3031efdf48131733f1") format("woff2"),
+		url("../fonts/icons/icons.woff?de32f8de2d41ab3031efdf48131733f1") format("woff"),
+		url("../fonts/icons/icons.ttf?de32f8de2d41ab3031efdf48131733f1") format("truetype"),
+		url("../fonts/icons/icons.svg?de32f8de2d41ab3031efdf48131733f1#icons") format("svg");
 	font-weight:normal;
 	font-style:normal;
 }
@@ -69,11 +69,16 @@
 }
 
 
-.icon_twitter:before {
+.icon_tools:before {
 	content:"\f108";
 }
 
 
-.icon_wordpress:before {
+.icon_twitter:before {
 	content:"\f109";
+}
+
+
+.icon_wordpress:before {
+	content:"\f10a";
 }

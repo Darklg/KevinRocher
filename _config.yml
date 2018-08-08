@@ -17,6 +17,87 @@ js_assets :
 css_assets :
   - assets/css/main.css
 
+
+# Projects
+projects :
+  - name : Freelance
+    list :
+    - name : Marque de produits de beauté naturels en ligne
+      description : Développement Front-End responsive pour ce e-commerce sous Magento 2, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
+      type : wip
+      ref : 112
+      year : 2018
+    - name : Interfaçage Magento 2 & WordPress
+      description : Intégration seamless entre un Magento 2 et un WordPress, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
+      type : wip
+      ref : 133
+      year : 2018
+    - name : Marque nationale de tennis et de squash
+      description : Refonte front-end responsive de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
+      type : wip
+      ref : 111
+      year : 2018
+    - name : Enseigne nationale de lingerie grandes tailles
+      description : Développement front-end responsive multisite de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
+      type : nda
+      ref : 107
+      year : 2018
+    - name : Enseigne nationale d'articles culturels et loisirs créatifs
+      description : Refonte front-end responsive de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
+      type : nda
+      ref : 95
+      year : 2017
+    - name : Enseigne nationale de lingerie
+      description : Nouveau thème responsive pour ce e-commerce sous Magento 2, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
+      type : nda
+      ref : 106
+      year : 2017
+    - name : Beaux Arts Magazine
+      description : Développement back-end d’un WordPress/WooCommerce avec gestion de flux et interfaçage d’API eBooks &amp; abonnement, pour ce magazine en ligne réalisé pour <a target="_blank" href="https://www.upian.com/fr/project/beauxarts">Upian</a>.
+      url : https://www.beauxarts.com
+      year : 2017
+    - name : Enseigne nationale de mode pour femmes et accessoires
+      description : Refonte front-end responsive de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
+      type : nda
+      ref : 101
+      year : 2017
+    - name : Heyraud
+      description : Développement front-end responsive de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
+      url : http://www.heyraud.fr
+      year : 2016
+  - name : Agence
+    list :
+    - name : Hartford
+      description : Développement front-end desktop et mobile de ce e-commerce sous Magento, réalisé en équipe au sein de <a target="_blank" href="http://www.colorz.fr/">l'agence Colorz</a>.
+      url : http://hartford.fr
+      year : 2014
+    - name : colette
+      description : Développement front-end desktop et mobile pour la célèbre marque colette, sous Magento, réalisé en équipe au sein de <a target="_blank" href="http://www.colorz.fr/">l'agence Colorz</a>.
+      url : http://colette.fr
+      year : 2014
+    - name : Fubiz
+      description : Intégration WordPress réalisée en équipe au sein de <a target="_blank" href="http://www.colorz.fr/">l'agence Colorz</a>.
+      url : http://fubiz.net
+      year : 2012
+  - name : Side-projects
+    list :
+    - name : CSSLisible
+      description : Cet outil open-source permet d'ordonner son code CSS et de le rendre plus lisible.
+      url : http://csslisible.com
+    - name : CSSCommon
+      description : Mon framework CSS, souple, modulaire et léger, utilisé sur tous mes projets.
+      url : http://csscommon.com
+    - name : WordPress Utilities
+      description : Les plugins WordPress et thème framework, utilisés sur mes projets WordPress.
+      url : https://github.com/WordPressUtilities
+    - name : JavaScript Utilities
+      description : Les plugins jQuery, MooTools &amp; Vanilla, utilisés sur la majorité de mes projets.
+      url : https://github.com/Darklg/JavaScriptUtilities
+    - name : InteGento
+      description : Les modules et outils utilisés sur la majorité de mes projets Magento.
+      url : https://github.com/InteGento
+
+
 # Skills
 
 big_skills :
