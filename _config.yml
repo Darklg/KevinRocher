@@ -22,6 +22,11 @@ css_assets :
 projects :
   - name : Freelance
     list :
+    - name : Marque de chaussures et vêtements pour homme
+      description : Développement Front-End responsive de ce e-commerce sous Magento 2, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
+      type : wip
+      ref : 129
+      year : 2018
     - name : Marque de produits de beauté naturels en ligne
       description : Développement Front-End responsive pour ce e-commerce sous Magento 2, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
       type : wip
@@ -29,12 +34,12 @@ projects :
       year : 2018
     - name : Interfaçage Magento 2 & WordPress
       description : Intégration seamless entre un Magento 2 et un WordPress, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
-      type : wip
+      type : nda
       ref : 133
       year : 2018
     - name : Marque nationale de tennis et de squash
       description : Refonte front-end responsive de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
-      type : wip
+      type : nda
       ref : 111
       year : 2018
     - name : Enseigne nationale de lingerie grandes tailles
@@ -42,6 +47,10 @@ projects :
       type : nda
       ref : 107
       year : 2018
+    - name : Beaux Arts Magazine
+      description : Développement back-end d’un WordPress/WooCommerce avec gestion de flux et interfaçage d’API eBooks &amp; abonnement, pour ce magazine en ligne réalisé pour <a target="_blank" href="https://www.upian.com/fr/project/beauxarts">Upian</a>.
+      url : https://www.beauxarts.com
+      year : 2017
     - name : Enseigne nationale d'articles culturels et loisirs créatifs
       description : Refonte front-end responsive de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
       type : nda
@@ -51,10 +60,6 @@ projects :
       description : Nouveau thème responsive pour ce e-commerce sous Magento 2, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
       type : nda
       ref : 106
-      year : 2017
-    - name : Beaux Arts Magazine
-      description : Développement back-end d’un WordPress/WooCommerce avec gestion de flux et interfaçage d’API eBooks &amp; abonnement, pour ce magazine en ligne réalisé pour <a target="_blank" href="https://www.upian.com/fr/project/beauxarts">Upian</a>.
-      url : https://www.beauxarts.com
       year : 2017
     - name : Enseigne nationale de mode pour femmes et accessoires
       description : Refonte front-end responsive de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
