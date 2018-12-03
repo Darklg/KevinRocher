@@ -20,10 +20,25 @@ css_assets :
 
 # Projects
 projects :
-  - name : Freelance
+  - name : WordPress
+    list :
+    - name : Valrhona - La Fève d’Or
+      url : https://lafevedenoel.valrhona.com
+      description : Développement Full-Stack sous WordPress de ce site expérience avec carte interactive, réalisé pour <a target="_blank" href="https://www.sweetpunk.com/">Sweet Punk</a>.
+      ref : 145
+      year : 2018
+    - name : Kaliop Digital Commerce
+      description : Intégration &amp; Développement WordPress AJAX du site de l'agence <a target="_blank" href="https://digitalcommerce.kaliop.com">Kaliop Digital Commerce</a>.
+      url : https://digitalcommerce.kaliop.com/
+      year : 2018
+    - name : Beaux Arts Magazine
+      description : Développement back-end d’un WordPress/WooCommerce avec gestion de flux et interfaçage d’API eBooks &amp; abonnement, pour ce magazine en ligne réalisé pour <a target="_blank" href="https://www.upian.com/fr/project/beauxarts">Upian</a>.
+      url : https://www.beauxarts.com
+      year : 2017
+  - name : Magento
     list :
     - name : Marque de chaussures et vêtements pour homme
-      description : Développement Front-End responsive de ce e-commerce sous Magento 2, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
+      description : Développement Front-End responsive de ce e-commerce sous Magento 2, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/partenaire/magento-commerce/">Kaliop Digital Commerce</a>.
       type : wip
       ref : 129
       year : 2018
@@ -47,10 +62,6 @@ projects :
       type : nda
       ref : 107
       year : 2018
-    - name : Beaux Arts Magazine
-      description : Développement back-end d’un WordPress/WooCommerce avec gestion de flux et interfaçage d’API eBooks &amp; abonnement, pour ce magazine en ligne réalisé pour <a target="_blank" href="https://www.upian.com/fr/project/beauxarts">Upian</a>.
-      url : https://www.beauxarts.com
-      year : 2017
     - name : Enseigne nationale d'articles culturels et loisirs créatifs
       description : Refonte front-end responsive de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
       type : nda
@@ -60,11 +71,6 @@ projects :
       description : Nouveau thème responsive pour ce e-commerce sous Magento 2, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
       type : nda
       ref : 106
-      year : 2017
-    - name : Enseigne nationale de mode pour femmes et accessoires
-      description : Refonte front-end responsive de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
-      type : nda
-      ref : 101
       year : 2017
     - name : Heyraud
       description : Développement front-end responsive de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
@@ -110,8 +116,8 @@ big_skills :
     description : Je m'occupe du front-end de votre boutique Magento avec un <strong>thème</strong> créé spécifiquement pour votre projet, des <strong>installers</strong> pour votre contenu initial, et je vous aide à trouver la meilleure solution pour votre contenu avancé ( blocs, intégration avec WordPress, etc. ).
   - name : Développement WordPress
     description : Je développe vos besoins spécifiques pour <strong>WordPress</strong> et <strong>WooCommerce</strong>, tels que de la <strong>gestion de flux</strong>, des <strong>interfaçages</strong> avec des API spécifiques ou tout simplement une fonctionnalité qui vous manque.
-  - name : Performances <br class="desktop-hide"/>front-end
-    description : Après un audit de votre site, je vous propose les meilleures pistes pour améliorer la <strong>vitesse de chargement</strong> et le <strong>ressenti</strong> de performance pour vos visiteurs. Et je vous aide ensuite à les déployer.
+  - name : Performances <br class="desktop-hide"/>Front-end
+    description : Après un audit de votre site, je vous propose les meilleures pistes pour améliorer la <strong>vitesse de chargement</strong> et le <strong>ressenti</strong> de performance pour vos visiteurs.<br />Et je vous aide ensuite à les déployer.
 
 skills :
   - Intégration <strong>HTML</strong> / <strong>CSS</strong>
@@ -134,9 +140,9 @@ clients :
   - name : Colorz
     id : colorz
     url : http://www.colorz.fr
-  - name : Soon by Kaliop
-    id : soon
-    url : http://www.agence-soon.fr
+  - name : Kaliop Digital Commerce
+    id : kdc
+    url : https://digitalcommerce.kaliop.com/
   - name : Nouveau Numéro
     id : nouveau-numero
     url : http://www.nouveaunumero.com
@@ -149,10 +155,6 @@ clients :
   - name : Maestrooo
     id : maestrooo
     url : http://www.maestrooo.com
-  - name : Cafffeine
-    id : cafffeine
-    url : http://www.cafffeine.com
-
 
 # Contact
 availabilityLabel: Disponibilités
