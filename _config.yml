@@ -22,6 +22,16 @@ css_assets :
 projects :
   - name : WordPress
     list :
+    - name : Site institutionnel WordPress
+      description : Développement Full-Stack WordPress d'un site institutionnel responsive à fort trafic et volume de contenu, avec gestion de flux, réalisé pour <a target="_blank" href="https://www.sweetpunk.com/">Sweet Punk</a>.
+      type : wip
+      ref : 158
+      year : 2019
+    - name : Trombinoscope WordPress
+      description : Développement Full-Stack WordPress d'un trombinoscope avec recherche instantanée et gestion de flux, réalisé pour <a target="_blank" href="https://commeunarbre.fr/">Comme un Arbre&nbsp;!</a>
+      type : wip
+      ref : 158
+      year : 2019
     - name : Valrhona - La Fève d’Or
       url : https://lafevedenoel.valrhona.com
       description : Développement Full-Stack sous WordPress de ce site expérience avec carte interactive, réalisé pour <a target="_blank" href="https://www.sweetpunk.com/">Sweet Punk</a>.
@@ -39,12 +49,12 @@ projects :
     list :
     - name : Marque de chaussures et vêtements pour homme
       description : Développement Front-End responsive de ce e-commerce sous Magento 2, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/partenaire/magento-commerce/">Kaliop Digital Commerce</a>.
-      type : wip
+      type : nda
       ref : 129
-      year : 2018
+      year : 2019
     - name : Marque de produits de beauté naturels en ligne
       description : Développement Front-End responsive pour ce e-commerce sous Magento 2, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
-      type : wip
+      type : nda
       ref : 112
       year : 2018
     - name : Interfaçage Magento 2 & WordPress
@@ -66,11 +76,6 @@ projects :
       description : Refonte front-end responsive de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
       type : nda
       ref : 95
-      year : 2017
-    - name : Enseigne nationale de lingerie
-      description : Nouveau thème responsive pour ce e-commerce sous Magento 2, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
-      type : nda
-      ref : 106
       year : 2017
     - name : Heyraud
       description : Développement front-end responsive de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
@@ -94,7 +99,7 @@ projects :
     list :
     - name : CSSLisible
       description : Cet outil open-source permet d'ordonner son code CSS et de le rendre plus lisible.
-      url : http://csslisible.com
+      url : https://csslisible.com
     - name : CSSCommon
       description : Mon framework CSS, souple, modulaire et léger, utilisé sur tous mes projets.
       url : http://csscommon.com
