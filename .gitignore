@@ -2,3 +2,4 @@ _dev
 _prod
 *.scssc
 .grunt/
+/_src/.jekyll-cache

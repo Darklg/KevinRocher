@@ -26,16 +26,15 @@
 
 .clients-list li a {
     display: block;
+    height: 4em;
     margin-bottom: 3em;
+    line-height: 4;
 }
 
 .clients-list li img {
     max-height: 4em;
     max-width: 70%;
-}
-
-.clients-list li .logo-cafffeine {
-    max-height: 3em;
+    vertical-align: middle;
 }
 
 .clients-list li .logo-maestrooo {

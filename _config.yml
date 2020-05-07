@@ -22,14 +22,23 @@ css_assets :
 projects :
   - name : WordPress
     list :
-    - name : Site institutionnel WordPress
-      description : Développement Full-Stack WordPress d'un site institutionnel responsive à fort trafic et volume de contenu, avec gestion de flux, réalisé pour <a target="_blank" href="https://www.sweetpunk.com/">Sweet Punk</a>.
+    - name : PWA WordPress
+      description : Développement d'un quiz en PWA sur WordPress, réalisé pour <a target="_blank" href="https://www.bien-fonde.com/">Bien Fondé</a>
       type : wip
-      ref : 158
-      year : 2019
+      ref : 206
+      year : 2020
+    - name : Site vitrine WordPress
+      description : Développement Full-Stack WordPress d'un site vitrine et catalogue, réalisé pour <a target="_blank" href="https://www.bien-fonde.com/">Bien Fondé</a>
+      type : wip
+      ref : 196
+      year : 2020
     - name : Trombinoscope WordPress
       description : Développement Full-Stack WordPress d'un trombinoscope avec recherche instantanée et gestion de flux, réalisé pour <a target="_blank" href="https://commeunarbre.fr/">Comme un Arbre&nbsp;!</a>
       type : wip
+      ref : 168
+      year : 2020
+    - name : Site institutionnel WordPress
+      description : Développement Full-Stack WordPress d'un site institutionnel responsive à fort trafic et volume de contenu, avec gestion de flux, réalisé pour <a target="_blank" href="https://www.sweetpunk.com/">Sweet Punk</a>.
       ref : 158
       year : 2019
     - name : Valrhona - La Fève d’Or
@@ -79,7 +88,7 @@ projects :
       year : 2017
     - name : Heyraud
       description : Développement front-end responsive de ce e-commerce sous Magento, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/">Kaliop Digital Commerce</a>.
-      url : http://www.heyraud.fr
+      url : #
       year : 2016
   - name : Agence
     list :
@@ -142,21 +151,21 @@ skills :
 
 # Clients
 clients :
-  - name : Colorz
-    id : colorz
-    url : http://www.colorz.fr
   - name : Kaliop Digital Commerce
     id : kdc
     url : https://digitalcommerce.kaliop.com/
-  - name : Nouveau Numéro
-    id : nouveau-numero
-    url : http://www.nouveaunumero.com
+  - name : Colorz
+    id : colorz
+    url : http://www.colorz.fr
+  - name : Bien•Fondé
+    id : bien-fonde
+    url : https://www.bien-fonde.com/
   - name : Upian
     id : upian
     url : https://www.upian.com/
-  - name : Starloo Graphic
-    id : starloo
-    url : http://www.starloographic.com
+  - name : Digital Ping Pong
+    id : dpp
+    url : https://digitalpingpong.com/
   - name : Maestrooo
     id : maestrooo
     url : http://www.maestrooo.com
