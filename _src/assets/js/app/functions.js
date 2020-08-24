@@ -50,6 +50,7 @@ var set_scroll = function() {
     var off = false,
         hiddenHeader = false,
         scroll = 0,
+        maxScroll = 0,
         scrollSteps = [],
         title = document.getElementById('main-header-title'),
         cover = document.getElementById('main-header-cover');
@@ -67,6 +68,7 @@ var set_scroll = function() {
             tmpTarget = false,
             tmpTargetDim = false,
             i;
+        maxScroll = document.body.clientHeight - getWindowInnerHeight();
         scrollSteps = [];
 
         for (i = 0; i < steps.length; ++i) {
@@ -97,6 +99,9 @@ var set_scroll = function() {
             if (scrollSteps[i].top <= scroll && scroll >= minScroll) {
                 currentI = i;
             }
+        }
+        if (scroll == maxScroll) {
+            currentI = scrollSteps.length - 1;
         }
         if (currentI !== false) {
             scrollSteps[currentI].isActive = true;
