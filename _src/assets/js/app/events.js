@@ -18,7 +18,7 @@ window.domReady(function() {
 
     /* Correct date in copyright */
     (function(){
-        var d = new Date;
+        var d = new Date();
         document.getElementById('current-year').innerHTML = d.getFullYear();
     }());
 

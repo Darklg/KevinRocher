@@ -1,6 +1,6 @@
 function is_touch_device() {
     return 'ontouchstart' in window || 'onmsgesturechange' in window;
-};
+}
 
 /* ----------------------------------------------------------
   Add a nice effect on the separators on mouseover
@@ -12,10 +12,10 @@ var set_separators = function() {
     }
     var separators = document.querySelectorAll(".main-sep");
     for (var i = 0; i < separators.length; i++) {
-        separators[i].addEventListener('mouseover', function(e) {
+        separators[i].addEventListener('mouseover', function() {
             Element.toggleClass(this, 'is-active');
         }, false);
-        separators[i].addEventListener('click', function(e) {
+        separators[i].addEventListener('click', function() {
             alert('Oh you !');
         }, false);
     }
@@ -26,7 +26,7 @@ var set_separators = function() {
 ---------------------------------------------------------- */
 
 var set_mainmenu = function() {
-    document.getElementById('toggle-menu').addEventListener('click', function(e) {
+    document.getElementById('toggle-menu').addEventListener('click', function() {
         Element.toggleClass(document.body, 'has-main-menu-open');
     }, false);
     var menuLinks = document.querySelectorAll(".main-links a");
@@ -134,5 +134,5 @@ var set_scroll = function() {
         title.style["-webkit-transform"] = 'translate3d(0,' + Math.round(scroll / 2) + 'px,0)';
         title.style["-moz-transform"] = 'translate3d(0,' + Math.round(scroll / 2) + 'px,0)';
         title.style["transform"] = 'translate3d(0,' + Math.round(scroll / 2) + 'px,0)';
-    };
+    }
 };
