@@ -22,22 +22,31 @@ css_assets :
 projects :
   - name : WordPress
     list :
-    - name : PWA WordPress
-      description : Développement d'un quiz en PWA sur WordPress, réalisé pour <a target="_blank" href="https://www.bien-fonde.com/">Bien Fondé</a>
-      type : wip
-      ref : 206
-      year : 2020
-    - name : Site vitrine WordPress
-      description : Développement Full-Stack WordPress d'un site vitrine et catalogue, réalisé pour <a target="_blank" href="https://www.bien-fonde.com/">Bien Fondé</a>
-      type : wip
-      ref : 196
-      year : 2020
     - name : Trombinoscope WordPress
       description : Développement Full-Stack WordPress d'un trombinoscope avec recherche instantanée et gestion de flux, réalisé pour <a target="_blank" href="https://commeunarbre.fr/">Comme un Arbre&nbsp;!</a>
       type : wip
       ref : 168
       year : 2020
-    - name : Site institutionnel WordPress
+    - name : Casio Éducation
+      description : Développement Full-Stack WordPress d'un site vitrine multilingue et catalogue avec formulaires complexes et liaison avec SalesForce, réalisé pour <a target="_blank" href="https://www.bien-fonde.com/fr/projets/casio-site/">Bien Fondé</a>
+      ref : 196
+      year : 2020
+    - name : PWA WordPress
+      description : Développement d'un quiz en PWA sur WordPress, réalisé pour <a target="_blank" href="https://www.bien-fonde.com/">Bien Fondé</a>
+      ref : 206
+      year : 2020
+    - name : Ingrid Marcille
+      url : https://www.ingridmarcille.com/
+      description : Développement Full-Stack d'un site responsive WordPress, réalisé pour <a target="_blank" href="https://digitalpingpong.com/">Digital Ping Pong</a>
+      ref : 204
+      year : 2020
+    - name : Astrum
+      url : https://astrum.law/
+      description : Développement Full-Stack d'un site responsive et multilingue WordPress, réalisé pour <a target="_blank" href="https://digitalpingpong.com/">Digital Ping Pong</a>
+      ref : 198
+      year : 2020
+    - name : Académie des Césars
+      url : https://www.academie-cinema.org/
       description : Développement Full-Stack WordPress d'un site institutionnel responsive à fort trafic et volume de contenu, avec gestion de flux, réalisé pour <a target="_blank" href="https://www.sweetpunk.com/">Sweet Punk</a>.
       ref : 158
       year : 2019
@@ -46,16 +55,17 @@ projects :
       description : Développement Full-Stack sous WordPress de ce site expérience avec carte interactive, réalisé pour <a target="_blank" href="https://www.sweetpunk.com/">Sweet Punk</a>.
       ref : 145
       year : 2018
-    - name : Kaliop Digital Commerce
-      description : Intégration &amp; Développement WordPress AJAX du site de l'agence <a target="_blank" href="https://digitalcommerce.kaliop.com">Kaliop Digital Commerce</a>.
-      url : https://digitalcommerce.kaliop.com/
-      year : 2018
     - name : Beaux Arts Magazine
       description : Développement back-end d’un WordPress/WooCommerce avec gestion de flux et interfaçage d’API eBooks &amp; abonnement, pour ce magazine en ligne réalisé pour <a target="_blank" href="https://www.upian.com/fr/project/beauxarts">Upian</a>.
       url : https://www.beauxarts.com
       year : 2017
   - name : Magento
     list :
+    - name : Marque de Prêt-à-Porter Féminin
+      description : Développement Front-End responsive de ce e-commerce sous Magento 2, avec création de widgets PageBuilder, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/partenaire/magento-commerce/">Kaliop Digital Commerce</a>.
+      type : nda
+      ref : 190
+      year : 2019
     - name : Marque de chaussures et vêtements pour homme
       description : Développement Front-End responsive de ce e-commerce sous Magento 2, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/partenaire/magento-commerce/">Kaliop Digital Commerce</a>.
       type : nda
@@ -154,15 +164,15 @@ clients :
   - name : Kaliop Digital Commerce
     id : kdc
     url : https://digitalcommerce.kaliop.com/
-  - name : Colorz
-    id : colorz
-    url : http://www.colorz.fr
   - name : Bien•Fondé
     id : bien-fonde
     url : https://www.bien-fonde.com/
   - name : Upian
     id : upian
     url : https://www.upian.com/
+  - name : DSPLY
+    id : dsply
+    url : https://dsply.fr/
   - name : Digital Ping Pong
     id : dpp
     url : https://digitalpingpong.com/
