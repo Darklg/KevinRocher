@@ -6,6 +6,8 @@
         </header>
         {% for projects in site.projects %}
         <h3>{{ projects.name }}</h3>
+        {% if projects.pitch %}<p>{{ projects.pitch }}</p>{% endif %}
+
         <ol class="projects-list" data-usechildren="1" data-delay="200">
             {% for project in projects.list %}<li>
                 <h4{% if project.type %} class="{{ project.type }}"{% endif %}>

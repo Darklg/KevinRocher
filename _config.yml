@@ -21,6 +21,7 @@ css_assets :
 # Projects
 projects :
   - name : WordPress
+    pitch : 💡 Ces projets sont réalisés sur mesure, notamment grâce à <a target="_blank" href="https://github.com/WordPressUtilities"><strong>mes plugins WordPress</strong></a>.
     list :
     - name : Trombinoscope WordPress
       description : Développement Full-Stack WordPress d'un trombinoscope avec recherche instantanée et gestion de flux, réalisé pour <a target="_blank" href="https://commeunarbre.fr/">Comme un Arbre&nbsp;!</a>
@@ -60,12 +61,13 @@ projects :
       url : https://www.beauxarts.com
       year : 2017
   - name : Magento
+    pitch : 💡 Je réalise le développement Front-End sur mesure des thèmes depuis Blank, à l’aide de mon <a target="_blank" href="https://github.com/InteGento/InteGentoStyles2"><strong>framework CSS IntegentoStyles</strong></a>.
     list :
     - name : Marque de Prêt-à-Porter Féminin
       description : Développement Front-End responsive de ce e-commerce sous Magento 2, avec création de widgets PageBuilder, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/partenaire/magento-commerce/">Kaliop Digital Commerce</a>.
       type : nda
       ref : 190
-      year : 2019
+      year : 2020
     - name : Marque de chaussures et vêtements pour homme
       description : Développement Front-End responsive de ce e-commerce sous Magento 2, réalisé pour <a target="_blank" href="https://digitalcommerce.kaliop.com/partenaire/magento-commerce/">Kaliop Digital Commerce</a>.
       type : nda
