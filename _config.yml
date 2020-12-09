@@ -29,6 +29,7 @@ projects :
       ref : 168
       year : 2020
     - name : Casio Éducation
+      url : https://www.casio-education.fr/
       description : Développement Full-Stack WordPress d'un site vitrine multilingue et catalogue avec formulaires complexes et liaison avec SalesForce, réalisé pour <a target="_blank" href="https://www.bien-fonde.com/fr/projets/casio-site/">Bien Fondé</a>
       ref : 196
       year : 2020
