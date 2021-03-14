@@ -23,6 +23,16 @@ projects :
   - name : WordPress
     pitch : 💡 Ces projets sont réalisés sur mesure, notamment grâce à <a target="_blank" href="https://github.com/WordPressUtilities"><strong>mes plugins WordPress</strong></a>.
     list :
+    - name : Taster
+      url : https://www.taster.com/fr/
+      description : Développement Full-Stack d'un WordPress multilingue en PJAX, réalisé pour <a target="_blank" href="https://www.dsply.fr/">DSPLY</a>
+      ref : 252
+      year : 2021
+    - name : King Call
+      url : https://www.kingcall.fr/
+      description : Développement Full-Stack d'un WordPress PJAX avec Creative Development, réalisé pour <a target="_blank" href="https://www.bien-fonde.com/">Bien Fondé</a>
+      ref : 213
+      year : 2020
     - name : Trombinoscope WordPress
       description : Développement Full-Stack WordPress d'un trombinoscope avec recherche instantanée et gestion de flux, réalisé pour <a target="_blank" href="https://commeunarbre.fr/">Comme un Arbre&nbsp;!</a>
       type : wip
