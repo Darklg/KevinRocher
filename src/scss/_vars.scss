@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+  Config
+---------------------------------------------------------- */
+
+$content_width: 1080px;
+$content_width_wide: 600px;
+$content_width_full: 1440px;
+
+/* Fonts
+-------------------------- */
+
+$font-main: 'Open Sans', Helvetica, Arial, sans-serif;
+$font-second: 'Muli', Helvetica, Arial, sans-serif;
+$font-size: 15px;
+$font-size-mobile: 15px;
+$line-height: 1.5;
+$line-height-em: 1.5em;
+$letter-spacing-base: 0;
+$letter-spacing-title: 0;
+
+/* Margins
+-------------------------- */
+
+$mobile-padding: 15px;
+$tablet-padding: 30px;
+$desktop-padding: 45px;
+$fieldset-margin: 2em;
+
+/* Grid */
+$mobile-grid-padding: 15px;
+$tablet-grid-padding: 30px;
+$desktop-grid-padding: 45px;
+
+/* Default margins */
+@import "csscommon/components/vars/margins";
+
+/* Basic colors
+-------------------------- */
+
+$color-main: #333;
+$color-hl: #369;
+$color-border: #e0e0e0;
+$color-bg: #f0f0f0;
+$color-red: #CC0000;
+$color-green: #00CC00;
+
+/* Social colors */
+@import "csscommon/components/vars/colors";
+
+/* Breakpoints
+-------------------------- */
+
+@import "csscommon/components/vars/breakpoints";
+@import "csscommon/components/vars/mediaqueries";
+
+/* Custom breakpoints */
+$has_mobile_menu: $desktop_excluded;
+$has_desktop_menu: $desktop_only;
+
+/* Sizes
+-------------------------- */
+
+$header-main-height-desktop: 100px;
+$header-sticky-height-desktop: 80px;
+$header-main-height-mobile: 60px;
+$border-radius: 3px;
+
+/* Positions
+-------------------------- */
+
+$zindex-header: 10;
+
+/* Compass values
+-------------------------- */
+
+$critical-usage-threshold: 2;
+$graceful-usage-threshold: 2;

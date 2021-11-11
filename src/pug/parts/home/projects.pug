@@ -1,0 +1,25 @@
+<section class="centered-container cc-projects">
+    <div class="projects">
+        <header class="section-header">
+            <h2 class="section-title">Projets</h2>
+            <p>Quelques projets sur lesquels <br class="hidden-on-full" /> j'ai pu intervenir.</p>
+        </header>
+        each projects in locals.site_data.projects
+            <h3>!{projects.name}</h3>
+            if projects.pitch
+                <p>!{projects.pitch}</p>
+            <ol class="projects-list" data-usechildren="1" data-delay="200">
+            each project in projects.list
+                li.
+                    <h4!{project.type ? ' class="'+project.type+'"' : ''}>
+                        <a href="!{project.url ? project.url : '#contact'}"!{project.url ? ' target="_blank"' : ''}>!{project.name}</a>
+                        !{project.year ? '<time datetime="'+project.year+'">'+project.year+'</time>' : ''}
+                    </h4>
+                    <p>
+                        !{project.type ? '<span>['+project.type.toUpperCase()+']</span>' : ''}
+                        !{project.description}
+                    </p>
+
+            </ol>
+    </div>
+</section>

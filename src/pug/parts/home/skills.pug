@@ -1,0 +1,22 @@
+<section class="centered-container cc-skills">
+    <div class="skills">
+        <header class="section-header">
+            <h2 class="section-title">Compétences</h2>
+            <p>Les sujets sur lesquels je vais <br class="hidden-on-full" /> pouvoir vous aider.</p>
+        </header>
+        <div class="skills-main">
+            each skill in locals.site_data.big_skills
+              <div class="skill-main__item">
+                  <h3 class="skill-main__item-title">!{skill.name}</h3>
+                  <p>!{skill.description}</p>
+              </div>
+        </div>
+        <div class="skills-list__wrapper">
+        <p>Et également :</p>
+        <ul class="skills-list" data-usechildren="1" data-delay="50">
+            each skill in locals.site_data.skills
+              <li>!{skill}</li>
+        </ul>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title #{locals.site_data.name} | #{locals.site_data.long_description}
+    meta(charset='utf-8')
+    meta(name='description',content=locals.site_data.long_description)
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(property='og:site_name', content=locals.site_data.name)
+    meta(property='og:title', content=locals.site_data.name)
+    meta(property='og:url', content=locals.site_data.prod_url)
+    meta(property='og:image', content=locals.site_data.prod_url+'assets/images/content/cover2.jpg')
+    meta(property='og:type', content='website')
+    each f in locals.cssFiles
+      <link rel="stylesheet" type="text/css" href="#{f}?v=#{Date.now()}" />
+    include ../includes/head-js.html
+  body(data-nojs='1' class='cssc-is-responsive')
+    include ../parts/signature.pug
+    include ../parts/header.pug
+    block content
+    each f in locals.jsFiles
+      <script src="#{f}?v=#{Date.now()}"></script>
+    include ../parts/footer.pug

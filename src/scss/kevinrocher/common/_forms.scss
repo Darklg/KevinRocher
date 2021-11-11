@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+  Forms
+---------------------------------------------------------- */
+
+/* Form items */
+
+%project--fieldgroup:not(:last-child) {
+    margin-bottom: $fieldset-margin;
+}
+
+%project--legend {
+    margin-bottom: 1.1em;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+%project--label {
+    text-transform: uppercase;
+}
+
+%project--field,
+%project--select {
+    @extend .inputreset;
+}
+
+%project--field {
+    padding: 0.5em 1em;
+    min-height: 2.5em;
+    border: 1px solid $color-border;
+    line-height: 1.5em;
+}
+
+%project--select {
+    @extend .cssc-select;
+    padding-right: 2em!important;
+    background: transparent no-repeat right 0 center;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAQAAADvCgS4AAAAGklEQVR4AWNg+I8BcQGCyhAAXRlhpcQAQsoAMGIY6KADYAUAAAAASUVORK5CYII=);
+}
+
+/* Placeholder */
+
+@mixin project-placeholder() {
+    color: $color-main;
+    opacity: 0.5;
+}
+
+%project--field {
+    &::-webkit-input-placeholder {
+        @include project-placeholder;
+    }
+
+    &:-moz-placeholder {
+        @include project-placeholder;
+    }
+
+    &::-moz-placeholder {
+        @include project-placeholder;
+    }
+
+    &:-ms-input-placeholder {
+        @include project-placeholder;
+    }
+
+    &::placeholder {
+        @include project-placeholder;
+    }
+}
+
+/* Radio - Checkboxes */
+
+%fake-check-ghost,
+%fake-radio-ghost {
+    & + label {
+        display: inline-block;
+        margin-right: 1em;
+        padding-left: 1.5em;
+        user-select: none;
+    }
+
+    & + label {
+        cursor: pointer;
+    }
+
+    & + label:before {
+        top: 0.1em;
+        border: 1px solid $color-hl!important;
+        background-color: #fff;
+        box-shadow: 0 0 0 1px transparent!important;
+    }
+
+    &:checked + label:before {
+        border-color: $color-hl!important;
+        color: $color-hl;
+    }
+}
+
+input[type="checkbox"] {
+    & {
+        @extend %fake-check-ghost;
+    }
+
+    &:checked + label:before {
+        color: #FFF;
+        background-color: $color-hl!important;
+    }
+}
+
+input[type="radio"] {
+    & {
+        @extend %fake-radio-ghost;
+    }
+
+    & + label:before {
+        content: '';
+        border-radius: 10em;
+    }
+
+    &:checked + label:before {
+        color: #FFF;
+        box-shadow: 0 0 0 1px transparent,inset 0 0 0 2px #FFF,inset 0 0 0 20px $color-hl!important;
+    }
+}
+/* Selectors
+-------------------------- */
+
+.cssc-form label {
+    @extend %project--label;
+}
+
+.cssc-form .box {
+    & {
+        @extend %project--fieldgroup;
+    }
+
+    select,
+    textarea,
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"] {
+        @extend %project--field;
+    }
+
+    select {
+        @extend %project--select;
+    }
+}
+
+@media($mobile_only) {
+    .cssc-form .twoboxes .box {
+        margin-bottom: $fieldset-margin;
+    }
+
+    .cssc-form .box.box--submit {
+        text-align: center;
+    }
+}

@@ -1,0 +1,13 @@
+<section class="centered-container cc-clients">
+    <div class="clients">
+        <header class="section-header">
+            <h2 class="section-title">Clients</h2>
+            <p>J'ai la chance de travailler<br class="hidden-on-full" /> avec ces sociétés.</p>
+        </header>
+        <ul class="clients-list" data-usechildren="1" data-delay="100">
+            each client in locals.site_data.clients
+                li.
+                    <a target="_blank" title="#{client.name}" href="#{client.url}"><img loading="lazy" src="assets/images/logos/#{client.id}.svg" alt="#{client.name}" /></a>
+        </ul>
+    </div>
+</section>

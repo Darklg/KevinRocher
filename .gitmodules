@@ -1,3 +1,6 @@
-[submodule "_src/assets/scss/csscommon"]
-	path = _src/assets/scss/csscommon
-	url = git@github.com:Darklg/SassCSSCommon.git
+[submodule "src/scss/csscommon"]
+	path = src/scss/csscommon
+	url = https://github.com/Darklg/SassCSSCommon.git
+[submodule "src/js/vanillaScrollAnims"]
+	path = src/js/vanillaScrollAnims
+	url = https://github.com/JavaScriptUtilities/vanillaScrollAnims.git

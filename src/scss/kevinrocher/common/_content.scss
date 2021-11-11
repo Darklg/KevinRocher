@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+  Basic
+---------------------------------------------------------- */
+
+dl,
+p,
+ul {
+    & {
+        font-size: $font-size;
+        line-height: $line-height;
+    }
+
+    @include resp($mobile_only) {
+        font-size: $font-size-mobile;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: $line-height-em;
+    }
+}
+
+dd,
+dt,
+li {
+    font: inherit;
+}
+
+/* ----------------------------------------------------------
+  CMS Content
+---------------------------------------------------------- */
+
+.cssc-content {
+    & {
+        max-width: 100%;
+        font-size: $font-size;
+        line-height: $line-height;
+    }
+
+    @include resp($mobile_only) {
+        font-size: $font-size-mobile;
+    }
+
+    h2 {
+        @extend %project--h2;
+    }
+
+    h3 {
+        @extend %project--h3;
+    }
+
+    h4 {
+        @extend %project--h4;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}

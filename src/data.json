@@ -1,0 +1,311 @@
+{
+    "name": "Kévin Rocher",
+    "description": "Développeur Front-End Freelance",
+    "long_description": "Développeur Front-End Freelance / WordPress & Magento à Paris",
+    "prod_url": "https://www.kevin-rocher.fr/",
+    "js_assets":
+    [
+        "assets/js/app/utils.js",
+        "assets/js/app/functions.js",
+        "assets/js/app/vanilla-scrollanims.js",
+        "assets/js/app/vanilla-tiptaptip.js",
+        "assets/js/app/events.js"
+    ],
+    "css_assets":
+    [
+        "assets/css/main.css"
+    ],
+    "projects":
+    [
+        {
+            "name": "WordPress",
+            "pitch": "💡 Ces projets sont réalisés sur mesure, notamment grâce à <a target=\"_blank\" href=\"https://github.com/WordPressUtilities\"><strong>mes plugins WordPress</strong></a>.",
+            "list":
+            [
+                {
+                    "name": "Taster",
+                    "url": "https://www.taster.com/fr/",
+                    "description": "Développement Full-Stack d'un WordPress multilingue en PJAX, réalisé pour <a target=\"_blank\" href=\"https://www.dsply.fr/\">DSPLY</a>",
+                    "ref": 252,
+                    "year": 2021
+                },
+                {
+                    "name": "King Call",
+                    "url": "https://www.kingcall.fr/",
+                    "description": "Développement Full-Stack d'un WordPress PJAX avec Creative Development, réalisé pour <a target=\"_blank\" href=\"https://www.bien-fonde.com/\">Bien Fondé</a>",
+                    "ref": 213,
+                    "year": 2020
+                },
+                {
+                    "name": "Trombinoscope WordPress",
+                    "description": "Développement Full-Stack WordPress d'un trombinoscope avec recherche instantanée et gestion de flux, réalisé pour <a target=\"_blank\" href=\"https://commeunarbre.fr/\">Comme un Arbre&nbsp;!</a>",
+                    "type": "wip",
+                    "ref": 168,
+                    "year": 2020
+                },
+                {
+                    "name": "Casio Éducation",
+                    "url": "https://www.casio-education.fr/",
+                    "description": "Développement Full-Stack WordPress d'un site vitrine multilingue et catalogue avec formulaires complexes et liaison avec SalesForce, réalisé pour <a target=\"_blank\" href=\"https://www.bien-fonde.com/fr/projets/casio-site/\">Bien Fondé</a>",
+                    "ref": 196,
+                    "year": 2020
+                },
+                {
+                    "name": "PWA WordPress",
+                    "description": "Développement d'un quiz en PWA sur WordPress, réalisé pour <a target=\"_blank\" href=\"https://www.bien-fonde.com/\">Bien Fondé</a>",
+                    "ref": 206,
+                    "year": 2020
+                },
+                {
+                    "name": "Ingrid Marcille",
+                    "url": "https://www.ingridmarcille.com/",
+                    "description": "Développement Full-Stack d'un site responsive WordPress, réalisé pour <a target=\"_blank\" href=\"https://digitalpingpong.com/\">Digital Ping Pong</a>",
+                    "ref": 204,
+                    "year": 2020
+                },
+                {
+                    "name": "Astrum",
+                    "url": "https://astrum.law/",
+                    "description": "Développement Full-Stack d'un site responsive et multilingue WordPress, réalisé pour <a target=\"_blank\" href=\"https://digitalpingpong.com/\">Digital Ping Pong</a>",
+                    "ref": 198,
+                    "year": 2020
+                },
+                {
+                    "name": "Académie des Césars",
+                    "url": "https://www.academie-cinema.org/",
+                    "description": "Développement Full-Stack WordPress d'un site institutionnel responsive à fort trafic et volume de contenu, avec gestion de flux, réalisé pour <a target=\"_blank\" href=\"https://www.sweetpunk.com/\">Sweet Punk</a>.",
+                    "ref": 158,
+                    "year": 2019
+                },
+                {
+                    "name": "Valrhona - La Fève d’Or",
+                    "url": "https://lafevedenoel.valrhona.com",
+                    "description": "Développement Full-Stack sous WordPress de ce site expérience avec carte interactive, réalisé pour <a target=\"_blank\" href=\"https://www.sweetpunk.com/\">Sweet Punk</a>.",
+                    "ref": 145,
+                    "year": 2018
+                },
+                {
+                    "name": "Beaux Arts Magazine",
+                    "description": "Développement back-end d’un WordPress/WooCommerce avec gestion de flux et interfaçage d’API eBooks &amp; abonnement, pour ce magazine en ligne réalisé pour <a target=\"_blank\" href=\"https://www.upian.com/fr/project/beauxarts\">Upian</a>.",
+                    "url": "https://www.beauxarts.com",
+                    "year": 2017
+                }
+            ]
+        },
+        {
+            "name": "Magento",
+            "pitch": "💡 Je réalise le développement Front-End sur mesure des thèmes depuis Blank, à l’aide de mon <a target=\"_blank\" href=\"https://github.com/InteGento/InteGentoStyles2\"><strong>framework CSS IntegentoStyles</strong></a>.",
+            "list":
+            [
+                {
+                    "name": "Marque de Prêt-à-Porter Féminin",
+                    "description": "Développement Front-End responsive de ce e-commerce sous Magento 2, avec création de widgets PageBuilder, réalisé pour <a target=\"_blank\" href=\"https://digitalcommerce.kaliop.com/partenaire/magento-commerce/\">Kaliop Digital Commerce</a>.",
+                    "type": "nda",
+                    "ref": 190,
+                    "year": 2020
+                },
+                {
+                    "name": "Marque de chaussures et vêtements pour homme",
+                    "description": "Développement Front-End responsive de ce e-commerce sous Magento 2, réalisé pour <a target=\"_blank\" href=\"https://digitalcommerce.kaliop.com/partenaire/magento-commerce/\">Kaliop Digital Commerce</a>.",
+                    "type": "nda",
+                    "ref": 129,
+                    "year": 2019
+                },
+                {
+                    "name": "Marque de produits de beauté naturels en ligne",
+                    "description": "Développement Front-End responsive pour ce e-commerce sous Magento 2, réalisé pour <a target=\"_blank\" href=\"https://digitalcommerce.kaliop.com/\">Kaliop Digital Commerce</a>.",
+                    "type": "nda",
+                    "ref": 112,
+                    "year": 2018
+                },
+                {
+                    "name": "Interfaçage Magento 2 & WordPress",
+                    "description": "Intégration seamless entre un Magento 2 et un WordPress, réalisé pour <a target=\"_blank\" href=\"https://digitalcommerce.kaliop.com/\">Kaliop Digital Commerce</a>.",
+                    "type": "nda",
+                    "ref": 133,
+                    "year": 2018
+                },
+                {
+                    "name": "Marque nationale de tennis et de squash",
+                    "description": "Refonte front-end responsive de ce e-commerce sous Magento, réalisé pour <a target=\"_blank\" href=\"https://digitalcommerce.kaliop.com/\">Kaliop Digital Commerce</a>.",
+                    "type": "nda",
+                    "ref": 111,
+                    "year": 2018
+                },
+                {
+                    "name": "Enseigne nationale de lingerie grandes tailles",
+                    "description": "Développement front-end responsive multisite de ce e-commerce sous Magento, réalisé pour <a target=\"_blank\" href=\"https://digitalcommerce.kaliop.com/\">Kaliop Digital Commerce</a>.",
+                    "type": "nda",
+                    "ref": 107,
+                    "year": 2018
+                },
+                {
+                    "name": "Enseigne nationale d'articles culturels et loisirs créatifs",
+                    "description": "Refonte front-end responsive de ce e-commerce sous Magento, réalisé pour <a target=\"_blank\" href=\"https://digitalcommerce.kaliop.com/\">Kaliop Digital Commerce</a>.",
+                    "type": "nda",
+                    "ref": 95,
+                    "year": 2017
+                },
+                {
+                    "name": "Heyraud",
+                    "description": "Développement front-end responsive de ce e-commerce sous Magento, réalisé pour <a target=\"_blank\" href=\"https://digitalcommerce.kaliop.com/\">Kaliop Digital Commerce</a>.",
+                    "url": null,
+                    "year": 2016
+                }
+            ]
+        },
+        {
+            "name": "Agence",
+            "list":
+            [
+                {
+                    "name": "Hartford",
+                    "description": "Développement front-end desktop et mobile de ce e-commerce sous Magento, réalisé en équipe au sein de <a target=\"_blank\" href=\"http://www.colorz.fr/\">l'agence Colorz</a>.",
+                    "url": "http://hartford.fr",
+                    "year": 2014
+                },
+                {
+                    "name": "colette",
+                    "description": "Développement front-end desktop et mobile pour la célèbre marque colette, sous Magento, réalisé en équipe au sein de <a target=\"_blank\" href=\"http://www.colorz.fr/\">l'agence Colorz</a>.",
+                    "url": "http://colette.fr",
+                    "year": 2014
+                },
+                {
+                    "name": "Fubiz",
+                    "description": "Intégration WordPress réalisée en équipe au sein de <a target=\"_blank\" href=\"http://www.colorz.fr/\">l'agence Colorz</a>.",
+                    "url": "http://fubiz.net",
+                    "year": 2012
+                }
+            ]
+        },
+        {
+            "name": "Side-projects",
+            "list":
+            [
+                {
+                    "name": "CSSLisible",
+                    "description": "Cet outil open-source permet d'ordonner son code CSS et de le rendre plus lisible.",
+                    "url": "https://csslisible.com"
+                },
+                {
+                    "name": "CSSCommon",
+                    "description": "Mon framework CSS, souple, modulaire et léger, utilisé sur tous mes projets.",
+                    "url": "https://csscommon.com"
+                },
+                {
+                    "name": "WordPress Utilities",
+                    "description": "Les plugins WordPress et thème framework, utilisés sur mes projets WordPress.",
+                    "url": "https://github.com/WordPressUtilities"
+                },
+                {
+                    "name": "JavaScript Utilities",
+                    "description": "Les plugins & modules JavaScript, utilisés sur la majorité de mes projets.",
+                    "url": "https://github.com/Darklg/JavaScriptUtilities"
+                },
+                {
+                    "name": "InteGento",
+                    "description": "Les modules et outils utilisés sur la majorité de mes projets Magento.",
+                    "url": "https://github.com/InteGento"
+                }
+            ]
+        }
+    ],
+    "big_skills":
+    [
+        {
+            "name": "Intégration <br class=\"hidden-on-full\" />Magento 1 & 2",
+            "description": "Je m'occupe du front-end de votre boutique Magento avec un <strong>thème</strong> créé spécifiquement pour votre projet, des <strong>installers</strong> pour votre contenu initial, et je vous aide à trouver la meilleure solution pour votre contenu avancé ( blocs, intégration avec WordPress, etc. )."
+        },
+        {
+            "name": "Développement WordPress",
+            "description": "Je développe vos besoins spécifiques pour <strong>WordPress</strong> et <strong>WooCommerce</strong>, tels que de la <strong>gestion de flux</strong>, des <strong>interfaçages</strong> avec des API spécifiques ou tout simplement une fonctionnalité qui vous manque."
+        },
+        {
+            "name": "Performances <br class=\"hidden-on-full\" />Front-end",
+            "description": "Après un audit de votre site, je vous propose les meilleures pistes pour améliorer la <strong>vitesse de chargement</strong> et le <strong>ressenti</strong> de performance pour vos visiteurs.<br />Et je vous aide ensuite à les déployer."
+        }
+    ],
+    "skills":
+    [
+        "Intégration <strong>HTML</strong> / <strong>CSS</strong>",
+        "Développement <strong>front-end</strong>",
+        "Création de thèmes <strong>WordPress</strong>",
+        "Accessibilité",
+        "Responsive",
+        "SEO",
+        "Vagrant",
+        "JavaScript",
+        "AJAX",
+        "Joe Dassin",
+        "PHP",
+        "MySQL",
+        "Git",
+        "Bash"
+    ],
+    "clients":
+    [
+        {
+            "name": "Kaliop Digital Commerce",
+            "id": "kdc",
+            "url": "https://digitalcommerce.kaliop.com/"
+        },
+        {
+            "name": "Bien•Fondé",
+            "id": "bien-fonde",
+            "url": "https://www.bien-fonde.com/"
+        },
+        {
+            "name": "Upian",
+            "id": "upian",
+            "url": "https://www.upian.com/"
+        },
+        {
+            "name": "DSPLY",
+            "id": "dsply",
+            "url": "https://dsply.fr/"
+        },
+        {
+            "name": "Digital Ping Pong",
+            "id": "dpp",
+            "url": "https://digitalpingpong.com/"
+        },
+        {
+            "name": "Maestrooo",
+            "id": "maestrooo",
+            "url": "http://www.maestrooo.com"
+        }
+    ],
+    "availabilityLabel": "Disponibilités",
+    "availability": "sur demande",
+    "email": "kevin.rocher@gmail.com",
+    "social_networks":
+    [
+        {
+            "site": "Github",
+            "id": "github",
+            "url": "https://github.com/darklg"
+        },
+        {
+            "site": "Linkedin",
+            "id": "linkedin",
+            "url": "https://fr.linkedin.com/in/kevinrocher"
+        },
+        {
+            "site": "Twitter",
+            "id": "twitter",
+            "url": "https://twitter.com/darklg"
+        },
+        {
+            "site": "Blog",
+            "id": "blog",
+            "url": "http://darklg.me"
+        },
+        {
+            "site": "Instagram",
+            "id": "instagram",
+            "url": "https://instagram.com/darklg"
+        }
+    ],
+    "footerQuote": "&ldquo; Stay Hungry, Stay Foolish &rdquo;",
+    "footerQuoteAuthor": "Steve Jobs"
+}

@@ -1,0 +1,33 @@
+<section class="centered-container cc-contact">
+    <div class="contact">
+        <header class="section-header">
+            <h2 class="section-title">Me contacter</h2>
+            <p>Et si on travaillait ensemble ?</p>
+        </header>
+        <div class="contact-content">
+            <p>
+                <strong>Écrivez-moi</strong><br />
+                <a class="email" href="mailto:#{locals.site_data.email}" title="Cliquer sur ce lien est une bonne idée.">#{locals.site_data.email}</a>
+            </p>
+            <div class="cssc-grid fluid-grid contact-grid">
+                <div class="col-50p">
+                    <p>
+                        <span>#{locals.site_data.availabilityLabel}</span><br />
+                        <strong>#{locals.site_data.availability}</strong>
+                    </p>
+                </div>
+                <div class="col-50p">
+                    <p class="social-desc">Je raconte ma vie par ici</p>
+                    <ul class="social-networks">
+                        each network in locals.site_data.social_networks
+                          li.
+                            <a target="_blank" class="icon icon_#{network.id}" href="#{network.url}" title="#{network.site}"></a>
+                    </ul>
+                </div>
+            </div>
+            <p class="contact-avatar">
+                <img width="150" height="150" data-hasscrollanim="1" data-delay="100" src="assets/images/content/developpeur-front-end-freelance.jpg" alt="#{locals.site_data.name} #{locals.site_data.description}" />
+            </p>
+        </div>
+    </div>
+</section>
