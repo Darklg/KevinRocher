@@ -16,19 +16,25 @@
     margin: 3em auto 0;
 }
 
-.social-networks li {
-    display: inline-block;
-    font-size: 1.5em;
-    vertical-align: bottom;
-}
+.social-networks {
+    li {
+        display: inline-block;
+        font-size: 1.5em;
+        vertical-align: bottom;
+    }
 
-.social-networks li + li {
-    margin-left: 0.5em;
-}
+    li + li {
+        margin-left: 0.5em;
+    }
 
-.social-networks a:hover,
-.social-networks a:focus {
-    color: $color-hl;
+    a:hover,
+    a:focus {
+        color: $color-hl;
+    }
+
+    a:not([class*="_twitter"]):before {
+        width: 1.1em;
+    }
 }
 
 .cc-contact .social-desc {
@@ -48,7 +54,7 @@
     text-align: center;
 }
 
-@media($mobile_only) {
+@media ($mobile_only) {
     .contact-content p {
         margin: 1em auto;
     }

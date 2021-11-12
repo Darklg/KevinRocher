@@ -78,6 +78,7 @@
     }
 
     i {
+        height: 1.4em;
         opacity: 0;
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
@@ -86,7 +87,7 @@
     }
 
     i:before {
-        padding: 0.2em;
+        padding: 0.3em;
     }
 
     i[data-active] {
