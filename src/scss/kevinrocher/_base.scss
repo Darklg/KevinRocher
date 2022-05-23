@@ -218,19 +218,12 @@ h3 {
     margin: auto;
     border: 1px solid $color-border;
     background-color: #fff;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
     transform: rotate(45deg);
-    -webkit-transform-origin: center center;
-    -moz-transform-origin: center center;
     transform-origin: center center;
 }
 
 .main-sep.is-active:before {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
@@ -270,22 +263,16 @@ h3 {
 .section-header .section-title,
 .section-header p {
     opacity: 0;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
     transform: translateY(-10px);
 }
 
 .section-header[data-active] .section-title {
-    -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s;
 }
 
 .section-header[data-active] .section-title,
 .section-header[data-active] p {
     opacity: 0.9999;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
     transform: translateY(0);
 }

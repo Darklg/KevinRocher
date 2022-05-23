@@ -39,5 +39,6 @@
     "jshint": "^2.13.1",
     "sass": "^1.43.4",
     "stylelint": "^14.0.1"
-  }
+  },
+  "dependencies": {}
 }

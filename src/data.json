@@ -233,7 +233,7 @@
         "Accessibilité",
         "Responsive",
         "SEO",
-        "Vagrant",
+        "Docker",
         "JavaScript",
         "AJAX",
         "Joe Dassin",
@@ -296,14 +296,14 @@
             "url": "https://twitter.com/darklg"
         },
         {
-            "site": "Blog",
-            "id": "blog",
-            "url": "http://darklg.me"
-        },
-        {
             "site": "Instagram",
             "id": "instagram",
             "url": "https://instagram.com/darklg"
+        },
+        {
+            "site": "Blog",
+            "id": "blog",
+            "url": "http://darklg.me"
         }
     ],
     "footerQuote": "&ldquo; Stay Hungry, Stay Foolish &rdquo;",
