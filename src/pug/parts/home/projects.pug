@@ -12,7 +12,7 @@
             each project in projects.list
                 li.
                     <h4!{project.type ? ' class="'+project.type+'"' : ''}>
-                        <a href="!{project.url ? project.url : '#contact'}"!{project.url ? ' target="_blank"' : ''}>!{project.name}</a>
+                        <a href="!{project.url ? project.url : '#contact'}"!{project.url ? ' rel="noopener" target="_blank"' : ''}>!{project.name}</a>
                         !{project.year ? '<time datetime="'+project.year+'">'+project.year+'</time>' : ''}
                     </h4>
                     <p>
