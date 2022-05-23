@@ -4,38 +4,12 @@
   Open Sans
 ---------------------------------------------------------- */
 
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../fonts/opensans/opensans-regular-webfont.eot');
-    src: url('../fonts/opensans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/opensans-regular-webfont.woff2') format('woff2'), url('../fonts/opensans/opensans-regular-webfont.woff') format('woff'), url('../fonts/opensans/opensans-regular-webfont.ttf') format('truetype'), url('../fonts/opensans/opensans-regular-webfont.svg#open_sansregular') format('svg');
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/opensans/opensans-bold-webfont.eot');
-    src: url('../fonts/opensans/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/opensans-bold-webfont.woff2') format('woff2'), url('../fonts/opensans/opensans-bold-webfont.woff') format('woff'), url('../fonts/opensans/opensans-bold-webfont.ttf') format('truetype'), url('../fonts/opensans/opensans-bold-webfont.svg#open_sansbold') format('svg');
-}
+@include cssc-font-face('Open Sans', '../fonts/opensans/opensans-regular-webfont', 400, normal, woff2 woff);
+@include cssc-font-face('Open Sans', '../fonts/opensans/opensans-bold-webfont', 700, normal, woff2 woff);
 
 /* ----------------------------------------------------------
   Muli
 ---------------------------------------------------------- */
 
-@font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../fonts/muli/muli-bold-webfont.eot');
-    src: url('../fonts/muli/muli-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/muli/muli-bold-webfont.woff2') format('woff2'), url('../fonts/muli/muli-bold-webfont.woff') format('woff'), url('../fonts/muli/muli-bold-webfont.ttf') format('truetype'), url('../fonts/muli/muli-bold-webfont.svg#mulibold') format('svg');
-}
-
-@font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/muli/muli-webfont.eot');
-    src: url('../fonts/muli/muli-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/muli/muli-webfont.woff2') format('woff2'), url('../fonts/muli/muli-webfont.woff') format('woff'), url('../fonts/muli/muli-webfont.ttf') format('truetype'), url('../fonts/muli/muli-webfont.svg#muliregular') format('svg');
-}
+@include cssc-font-face('Muli', '../fonts/muli/muli-regular-webfont', 400, normal, woff2 woff);
+@include cssc-font-face('Muli', '../fonts/muli/muli-bold-webfont', 700, normal, woff2 woff);

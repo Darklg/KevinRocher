@@ -138,6 +138,9 @@ input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search
 width:0;
 height:0;
 }
+button{
+color:inherit;
+}
 input[type=date]::-webkit-clear-button,input[type=date]::-webkit-inner-spin-button,input[type=date]::-webkit-calendar-picker-indicator{
 display:none;
 }
@@ -1444,8 +1447,8 @@ display:none !important;
 }
 @font-face{
 font-family:"icons";
-src:url("../../assets/fonts/icons/icons.eot?1653311467");
-src:url("../../assets/fonts/icons/icons.eot?1653311467#iefix") format("eot"),url("../../assets/fonts/icons/icons.woff2?1653311467") format("woff2"),url("../../assets/fonts/icons/icons.woff?1653311467") format("woff"),url("../../assets/fonts/icons/icons.ttf?1653311467") format("truetype"),url("../../assets/fonts/icons/icons.svg?1653311467#icons") format("svg");
+src:url("../../assets/fonts/icons/icons.eot?1653313137");
+src:url("../../assets/fonts/icons/icons.eot?1653313137#iefix") format("eot"),url("../../assets/fonts/icons/icons.woff2?1653313137") format("woff2"),url("../../assets/fonts/icons/icons.woff?1653313137") format("woff"),url("../../assets/fonts/icons/icons.ttf?1653313137") format("truetype"),url("../../assets/fonts/icons/icons.svg?1653313137#icons") format("svg");
 }
 .icon:before,.projects-list h4 a:before{
 font-family:"icons";
@@ -1490,30 +1493,26 @@ content:"\e00a";
 @font-face{
 font-family:"Open Sans";
 font-style:normal;
-font-weight:normal;
-src:url("../fonts/opensans/opensans-regular-webfont.eot");
-src:url("../fonts/opensans/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/opensans/opensans-regular-webfont.woff2") format("woff2"),url("../fonts/opensans/opensans-regular-webfont.woff") format("woff"),url("../fonts/opensans/opensans-regular-webfont.ttf") format("truetype"),url("../fonts/opensans/opensans-regular-webfont.svg#open_sansregular") format("svg");
+font-weight:400;
+src:url("../fonts/opensans/opensans-regular-webfont.woff2") format("woff2"),url("../fonts/opensans/opensans-regular-webfont.woff") format("woff");
 }
 @font-face{
 font-family:"Open Sans";
 font-style:normal;
 font-weight:700;
-src:url("../fonts/opensans/opensans-bold-webfont.eot");
-src:url("../fonts/opensans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/opensans/opensans-bold-webfont.woff2") format("woff2"),url("../fonts/opensans/opensans-bold-webfont.woff") format("woff"),url("../fonts/opensans/opensans-bold-webfont.ttf") format("truetype"),url("../fonts/opensans/opensans-bold-webfont.svg#open_sansbold") format("svg");
+src:url("../fonts/opensans/opensans-bold-webfont.woff2") format("woff2"),url("../fonts/opensans/opensans-bold-webfont.woff") format("woff");
 }
 @font-face{
 font-family:"Muli";
 font-style:normal;
-font-weight:normal;
-src:url("../fonts/muli/muli-bold-webfont.eot");
-src:url("../fonts/muli/muli-bold-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/muli/muli-bold-webfont.woff2") format("woff2"),url("../fonts/muli/muli-bold-webfont.woff") format("woff"),url("../fonts/muli/muli-bold-webfont.ttf") format("truetype"),url("../fonts/muli/muli-bold-webfont.svg#mulibold") format("svg");
+font-weight:400;
+src:url("../fonts/muli/muli-regular-webfont.woff2") format("woff2"),url("../fonts/muli/muli-regular-webfont.woff") format("woff");
 }
 @font-face{
 font-family:"Muli";
 font-style:normal;
 font-weight:700;
-src:url("../fonts/muli/muli-webfont.eot");
-src:url("../fonts/muli/muli-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/muli/muli-webfont.woff2") format("woff2"),url("../fonts/muli/muli-webfont.woff") format("woff"),url("../fonts/muli/muli-webfont.ttf") format("truetype"),url("../fonts/muli/muli-webfont.svg#muliregular") format("svg");
+src:url("../fonts/muli/muli-bold-webfont.woff2") format("woff2"),url("../fonts/muli/muli-bold-webfont.woff") format("woff");
 }
 .kevinrocher-button{
 padding:0 1em;
