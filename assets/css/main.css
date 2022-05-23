@@ -1447,8 +1447,8 @@ display:none !important;
 }
 @font-face{
 font-family:"icons";
-src:url("../../assets/fonts/icons/icons.eot?1653313137");
-src:url("../../assets/fonts/icons/icons.eot?1653313137#iefix") format("eot"),url("../../assets/fonts/icons/icons.woff2?1653313137") format("woff2"),url("../../assets/fonts/icons/icons.woff?1653313137") format("woff"),url("../../assets/fonts/icons/icons.ttf?1653313137") format("truetype"),url("../../assets/fonts/icons/icons.svg?1653313137#icons") format("svg");
+src:url("../../assets/fonts/icons/icons.eot?1653313277");
+src:url("../../assets/fonts/icons/icons.eot?1653313277#iefix") format("eot"),url("../../assets/fonts/icons/icons.woff2?1653313277") format("woff2"),url("../../assets/fonts/icons/icons.woff?1653313277") format("woff"),url("../../assets/fonts/icons/icons.ttf?1653313277") format("truetype"),url("../../assets/fonts/icons/icons.svg?1653313277#icons") format("svg");
 }
 .icon:before,.projects-list h4 a:before{
 font-family:"icons";
@@ -1506,7 +1506,7 @@ src:url("../fonts/opensans/opensans-bold-webfont.woff2") format("woff2"),url("..
 font-family:"Muli";
 font-style:normal;
 font-weight:400;
-src:url("../fonts/muli/muli-regular-webfont.woff2") format("woff2"),url("../fonts/muli/muli-regular-webfont.woff") format("woff");
+src:url("../fonts/muli/muli-webfont.woff2") format("woff2"),url("../fonts/muli/muli-webfont.woff") format("woff");
 }
 @font-face{
 font-family:"Muli";
@@ -1791,6 +1791,7 @@ h4,
 h5,
 .h5{
 font-family:"Muli",Helvetica,Arial,sans-serif;
+font-weight:bold;
 letter-spacing:0;
 }
 h1,
@@ -1963,7 +1964,7 @@ h3{
 margin:0;
 text-transform:uppercase;
 font-family:"Muli",Helvetica,Arial,sans-serif;
-font-weight:normal;
+font-weight:bold;
 line-height:1.5;
 letter-spacing:0.1em;
 }
@@ -2025,7 +2026,7 @@ background-color:#e0e0e0;
 margin:0 0 0.5em;
 text-transform:uppercase;
 font-family:"Muli",Helvetica,Arial,sans-serif;
-font-weight:normal;
+font-weight:bold;
 line-height:1;
 color:#333;
 }
@@ -2313,8 +2314,8 @@ margin:auto;
 max-width:90%;
 text-align:center;
 text-shadow:0 0 10px rgba(0,0,0,0.75);
-font-size:1.6em;
-font-weight:300;
+font-size:1.4em;
+font-weight:normal;
 line-height:1;
 letter-spacing:0.05em;
 color:#DDD;
@@ -2326,8 +2327,8 @@ display:inline-block;
 margin-bottom:0.1em;
 text-transform:uppercase;
 font:inherit;
+font-weight:bold;
 font-size:3em;
-font-weight:400;
 letter-spacing:0;
 color:#fff;
 }
