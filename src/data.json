@@ -325,6 +325,11 @@
             "url": "https://instagram.com/darklg"
         },
         {
+            "site": "Mastodon",
+            "id": "mastodon",
+            "url": "https://piaille.fr/@darklg"
+        },
+        {
             "site": "Blog",
             "id": "blog",
             "url": "http://darklg.me"

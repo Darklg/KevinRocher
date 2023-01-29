@@ -3,7 +3,6 @@
 ---------------------------------------------------------- */
 
 const p = require('./package.json');
-const site_data = require('./src/data.json');
 
 /* Tools */
 const gulp = require('gulp');
@@ -169,7 +168,6 @@ exports.style = style;
 ---------------------------------------------------------- */
 
 function pug_generate() {
-
     /* List icons */
     var _icons = glob.sync(svg_files).map(function(item) {
         return item.split('/').reverse()[0].replace('.svg', '');
@@ -183,7 +181,7 @@ function pug_generate() {
                 jsFiles: glob.sync(js_folder + '/*.js'),
                 cssFiles: glob.sync(css_folder + '/*.css'),
                 package: p,
-                site_data: site_data
+                site_data: require('./src/data.json')
             },
             doctype: 'html',
             pretty: false
