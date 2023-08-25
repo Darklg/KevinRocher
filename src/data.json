@@ -24,9 +24,8 @@
             [
                 {
                     "name": "Chut! magazine",
-                    "url": "",
+                    "url": "https://chut.media",
                     "description": "Refonte Full-Stack WordPress/WooCommerce avec migration complexe, et gestion d'abonnements.",
-                    "type": "wip",
                     "ref": 262,
                     "year": 2022
                 },
