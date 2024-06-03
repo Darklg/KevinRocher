@@ -1482,8 +1482,8 @@ display:none !important;
 }
 @font-face{
 font-family:"icons";
-src:url("../../assets/fonts/icons/icons.eot?1717421152");
-src:url("../../assets/fonts/icons/icons.eot?1717421152#iefix") format("eot"),url("../../assets/fonts/icons/icons.woff2?1717421152") format("woff2"),url("../../assets/fonts/icons/icons.woff?1717421152") format("woff"),url("../../assets/fonts/icons/icons.ttf?1717421152") format("truetype"),url("../../assets/fonts/icons/icons.svg?1717421152#icons") format("svg");
+src:url("../../assets/fonts/icons/icons.eot?1717425442");
+src:url("../../assets/fonts/icons/icons.eot?1717425442#iefix") format("eot"),url("../../assets/fonts/icons/icons.woff2?1717425442") format("woff2"),url("../../assets/fonts/icons/icons.woff?1717425442") format("woff"),url("../../assets/fonts/icons/icons.ttf?1717425442") format("truetype"),url("../../assets/fonts/icons/icons.svg?1717425442#icons") format("svg");
 }
 .icon:before,.projects-list h4 a:before{
 font-family:"icons";
@@ -1519,14 +1519,17 @@ content:"\e007";
 .icon_mastodon:before{
 content:"\e008";
 }
-.icon_tools:before,.projects-list h4.wip a:before{
+.icon_shopify:before{
 content:"\e009";
 }
-.icon_twitter:before{
+.icon_tools:before,.projects-list h4.wip a:before{
 content:"\e00a";
 }
-.icon_wordpress:before{
+.icon_twitter:before{
 content:"\e00b";
+}
+.icon_wordpress:before{
+content:"\e00c";
 }
 @font-face{
 font-family:"Open Sans";

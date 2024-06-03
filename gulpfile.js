@@ -15,7 +15,7 @@ const bs = require('browser-sync').create();
 
 const p = require('./package.json');
 const project_name = p.name;
-const project_host = p.project_hostname;
+const data_json = require('./src/data.json');
 
 /* Files & Folders
 -------------------------- */
@@ -29,7 +29,7 @@ const js_folder = app_folder + 'js';
 const css_folder = app_folder + 'css';
 const sass_files = [sass_folder + '/**.scss', sass_folder + '/**/**.scss'];
 const js_src_folder = src_folder + 'js';
-const js_src_files = [js_src_folder + '/**.js', js_src_folder + '/vanillaScrollAnims/js/vanilla-scrollanims.min.js'];
+const js_src_files = data_json.js_assets;
 
 /* ----------------------------------------------------------
   Font-Icon
@@ -71,7 +71,7 @@ exports.lintjs = lintjs;
 const pug_views = src_folder + 'pug/'
 const pug_files = [pug_views + '**.pug', pug_views + '**/**.{pug,html}'];
 const _extras = {
-    site_data: require('./src/data.json')
+    site_data: data_json
 };
 
 pug_generate = require("./src/gulp/intestarter_gulpfile/tasks/pug")(p, pug_views, pug_files, svg_files, js_folder, css_folder, _extras);

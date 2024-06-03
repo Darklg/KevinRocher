@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "icons";
-	src: url('../../assets/fonts/icons/icons.eot?1717421152');
-	src: url('../../assets/fonts/icons/icons.eot?1717421152#iefix') format('eot'),
-		url('../../assets/fonts/icons/icons.woff2?1717421152') format('woff2'),
-		url('../../assets/fonts/icons/icons.woff?1717421152') format('woff'),
-		url('../../assets/fonts/icons/icons.ttf?1717421152') format('truetype'),
-		url('../../assets/fonts/icons/icons.svg?1717421152#icons') format('svg');
+	src: url('../../assets/fonts/icons/icons.eot?1717425442');
+	src: url('../../assets/fonts/icons/icons.eot?1717425442#iefix') format('eot'),
+		url('../../assets/fonts/icons/icons.woff2?1717425442') format('woff2'),
+		url('../../assets/fonts/icons/icons.woff?1717425442') format('woff'),
+		url('../../assets/fonts/icons/icons.ttf?1717425442') format('truetype'),
+		url('../../assets/fonts/icons/icons.svg?1717425442#icons') format('svg');
 }
 
 .icon:before {
@@ -53,14 +53,18 @@
 	content: "\E008";
 }
 
-.icon_tools:before {
+.icon_shopify:before {
 	content: "\E009";
 }
 
-.icon_twitter:before {
+.icon_tools:before {
 	content: "\E00A";
 }
 
-.icon_wordpress:before {
+.icon_twitter:before {
 	content: "\E00B";
+}
+
+.icon_wordpress:before {
+	content: "\E00C";
 }
