@@ -2,193 +2,79 @@
   Modules
 ---------------------------------------------------------- */
 
-const p = require('./package.json');
-
 /* Tools */
 const gulp = require('gulp');
 const {series} = gulp;
-const glob = require('glob');
 
 /* Reload */
 const bs = require('browser-sync').create();
-
-/* Sass */
-const sass = require('gulp-sass')(require('sass'));
-const sassGlob = require('gulp-sass-glob');
-const autoprefixer = require('gulp-autoprefixer');
-const stripCssComments = require('gulp-strip-css-comments');
-const removeEmptyLines = require('gulp-remove-empty-lines');
-const trimlines = require('gulp-trimlines');
-const gulpStylelint = require('gulp-stylelint');
-
-/* Icon font */
-const runTimestamp = function() {
-    return Math.round(Date.now() / 1000);
-};
-const replace = require('gulp-replace');
-const iconfont = require('gulp-iconfont');
-const iconfontCss = require('gulp-iconfont-css');
-const svgmin = require('gulp-svgmin');
-
-/* Styleguide */
-const pug = require('gulp-pug');
-
-/* JS */
-const concat = require('gulp-concat');
-const minify = require("gulp-minify");
-const jshint = require('gulp-jshint');
 
 /* ----------------------------------------------------------
   Config
 ---------------------------------------------------------- */
 
+const p = require('./package.json');
 const project_name = p.name;
 const project_host = p.project_hostname;
+
+/* Files & Folders
+-------------------------- */
+
 const app_folder = 'assets/';
 const src_folder = 'src/';
-const fonts_folder = app_folder + 'fonts';
 const sass_folder = src_folder + 'scss';
 const sass_folder_proj = sass_folder + '/' + project_name;
+const svg_files = src_folder + 'icons/*.svg';
+const js_folder = app_folder + 'js';
 const css_folder = app_folder + 'css';
 const sass_files = [sass_folder + '/**.scss', sass_folder + '/**/**.scss'];
-const pug_views = src_folder + 'pug/';
-const pug_files = [src_folder + 'data.json', pug_views + '**.pug', pug_views + '**/**.{pug,html}'];
-const svg_files = src_folder + 'icons/*.svg';
-const fontName = 'icons';
 const js_src_folder = src_folder + 'js';
-const js_folder = app_folder + 'js';
-const js_src_files = [
-    js_src_folder + '/vanillaScrollAnims/js/vanilla-scrollanims.js',
-    js_src_folder + '/*.js'
-];
+const js_src_files = [js_src_folder + '/**.js', js_src_folder + '/vanillaScrollAnims/js/vanilla-scrollanims.min.js'];
 
 /* ----------------------------------------------------------
   Font-Icon
 ---------------------------------------------------------- */
 
-function buildiconfont() {
-    return gulp.src([svg_files])
-        .pipe(svgmin())
-        .pipe(iconfontCss({
-            cssClass: 'icon',
-            fontName: fontName,
-            targetPath: '../../../' + sass_folder_proj + '/_icons.scss',
-            path: 'css',
-            cacheBuster: runTimestamp(),
-            fontPath: '../../' + fonts_folder + '/' + fontName + '/'
-        }))
-        .pipe(iconfont({
-            normalize: true,
-            fontName: fontName,
-            fontHeight: 1001,
-            formats: ['ttf', 'eot', 'woff', 'woff2'],
-        }))
-        .pipe(gulp.dest(fonts_folder + '/' + fontName + '/'))
-        .on("finish", function() {
-            return gulp.src(sass_folder_proj + '/_icons.scss', {
-                    base: "./"
-                })
-                .pipe(replace('icon-', 'icon_'))
-                .pipe(gulp.dest('./'));
-        });
-}
+const fonts_folder = app_folder + 'fonts';
+const fontName = 'icons';
 
-exports.iconfont = buildiconfont;
-
-/* ----------------------------------------------------------
-  lint
----------------------------------------------------------- */
-
-function lintjs() {
-    return gulp.src(js_src_files)
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-}
-
-exports.lintjs = lintjs;
-
-/* ----------------------------------------------------------
-  JS Minify
----------------------------------------------------------- */
-
-function minifyjs() {
-    return gulp.src(js_src_files, {
-            allowEmpty: true
-        })
-        .pipe(minify({
-            noSource: true
-        }))
-        .pipe(concat('app.js', {
-            newLine: ";\n"
-        }))
-        .pipe(replace(';;', ';'))
-        .pipe(gulp.dest(js_folder));
-}
-
-exports.minifyjs = minifyjs;
+iconfont = require("./src/gulp/intestarter_gulpfile/tasks/iconfont")(svg_files, sass_folder_proj, fonts_folder, fontName);
+exports.iconfont = iconfont;
 
 /* ----------------------------------------------------------
   Compile styles
 ---------------------------------------------------------- */
 
-function style() {
-    return gulp.src(sass_files)
-        .pipe(sassGlob())
-        .pipe(sass({
-            indentType: 'space',
-            indentWidth: 0
-        }).on('error', sass.logError))
-        .pipe(autoprefixer({
-            cascade: false
-        }))
-        .pipe(stripCssComments({
-            whitespace: false
-        }))
-        .pipe(removeEmptyLines())
-        .pipe(trimlines())
-        .pipe(replace(/( ?)([\,\:\{\}\;\>])( ?)/g, '$2'))
-        .pipe(replace(';}', '}'))
-        .pipe(gulp.dest(css_folder, {
-            sourcemaps: false
-        }))
-        .pipe(bs.stream())
-        .pipe(gulpStylelint({
-            failAfterError: false,
-            reporters: [{
-                formatter: 'string',
-                console: true
-            }],
-            debug: false
-        }));
-}
+style = require("./src/gulp/intestarter_gulpfile/tasks/style")(sass_files, css_folder, bs);
 exports.style = style;
+
+/* ----------------------------------------------------------
+  JS Minify & lint
+---------------------------------------------------------- */
+
+/* Minify
+-------------------------- */
+
+minifyjs = require("./src/gulp/intestarter_gulpfile/tasks/minifyjs")(js_src_files, js_folder);
+exports.minifyjs = minifyjs;
+
+/* Lint
+-------------------------- */
+
+lintjs = require("./src/gulp/intestarter_gulpfile/tasks/lintjs")(js_src_files);
+exports.lintjs = lintjs;
 
 /* ----------------------------------------------------------
   Generate styleguide
 ---------------------------------------------------------- */
 
-function pug_generate() {
-    /* List icons */
-    var _icons = glob.sync(svg_files).map(function(item) {
-        return item.split('/').reverse()[0].replace('.svg', '');
-    });
+const pug_views = src_folder + 'pug/'
+const pug_files = [pug_views + '**.pug', pug_views + '**/**.{pug,html}'];
+const _extras = {
+    site_data: require('./src/data.json')
+};
 
-    return gulp
-        .src([pug_views + '*.pug'])
-        .pipe(pug({
-            locals: {
-                icons: _icons,
-                jsFiles: glob.sync(js_folder + '/*.js'),
-                cssFiles: glob.sync(css_folder + '/*.css'),
-                package: p,
-                site_data: require('./src/data.json')
-            },
-            doctype: 'html',
-            pretty: false
-        }))
-        .pipe(gulp.dest('./'));
-}
-
+pug_generate = require("./src/gulp/intestarter_gulpfile/tasks/pug")(p, pug_views, pug_files, svg_files, js_folder, css_folder, _extras);
 exports.pug = pug_generate;
 
 /* ----------------------------------------------------------
@@ -207,7 +93,7 @@ exports.watch = function watch() {
         open: true
     });
     style();
-    gulp.watch(svg_files, series(buildiconfont, pug_generate));
+    gulp.watch(svg_files, series(iconfont, pug_generate));
     gulp.watch(js_src_files, series(lintjs, minifyjs));
     gulp.watch(pug_files, series(pug_generate, function bs_reload(done) {
         bs.reload();
@@ -220,6 +106,6 @@ exports.watch = function watch() {
   Default
 ---------------------------------------------------------- */
 
-const defaultTask = series(buildiconfont, style, lintjs, minifyjs, pug_generate);
+const defaultTask = series(iconfont, style, lintjs, minifyjs, pug_generate);
 
 exports.default = defaultTask;

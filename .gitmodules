@@ -4,3 +4,6 @@
 [submodule "src/js/vanillaScrollAnims"]
 	path = src/js/vanillaScrollAnims
 	url = https://github.com/JavaScriptUtilities/vanillaScrollAnims.git
+[submodule "src/gulp/intestarter_gulpfile"]
+	path = src/gulp/intestarter_gulpfile
+	url = https://github.com/Darklg/intestarter_gulpfile.git

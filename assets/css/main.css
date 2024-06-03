@@ -1,14 +1,6 @@
 @charset "UTF-8";
 body:after{
 content:"";
-z-index:1;
-position:absolute;
-top:0;
-left:-9999px;
-width:1px;
-height:1px;
-overflow:hidden;
-opacity:0.001;
 }
 @media (min-width:1024px){
 body:after{
@@ -39,7 +31,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
 a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,
 small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,
 form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,
-audio,canvas,datalist,details,dialog,figure,footer,header,
+audio,canvas,datalist,details,figure,footer,header,
 menu,nav,section,video,abbr,mark,meter,time,progress,output{
 margin:0;
 padding:0;
@@ -72,7 +64,6 @@ aside,
 audio,
 canvas,
 details,
-dialog,
 figure,
 figcaption,
 footer,
@@ -139,6 +130,7 @@ width:0;
 height:0;
 }
 button{
+font:inherit;
 color:inherit;
 }
 input[type=date]::-webkit-clear-button,input[type=date]::-webkit-inner-spin-button,input[type=date]::-webkit-calendar-picker-indicator{
@@ -228,7 +220,7 @@ font-size:13px;
 line-height:1.4;
 }
 p{
-margin-bottom:18px;
+margin-bottom:1.4em;
 }
 blockquote p:last-child,
 p:last-child{
@@ -276,19 +268,15 @@ cursor:help;
 }
 blockquote{
 display:block;
-padding:5px 0 5px 10px;
-border-color:rgba(0,0,0,0.1);
-border-left:5px solid #DDD;
-font-size:12px;
-}
-blockquote p{
-margin-bottom:4px;
+padding:0.5em 0 0.5em 1em;
+border-left:5px solid rgba(0,0,0,0.1);
+font-size:inherit;
 }
 hr{
 clear:both;
+margin:1em 0;
 border:0;
-border-top:1px solid #aaa;
-border-bottom:1px solid #f0f0f0;
+border-top:1px solid rgba(0,0,0,0.3);
 }
 .cssc-content:after,
 .cssc-grid:before,
@@ -304,6 +292,7 @@ overflow:hidden;
 }
 hr[class*=clearfix]{
 height:0;
+margin:0;
 border:0;
 outline:0;
 background:transparent;
@@ -353,7 +342,12 @@ transition:border-color 0.3s ease,background 0.3s ease,color 0.3s ease;
 *:before,
 *:after,
 *{
-transition:none !important;
+-webkit-animation-duration:0.01ms !important;
+animation-duration:0.01ms !important;
+-webkit-animation-iteration-count:1 !important;
+animation-iteration-count:1 !important;
+transition-duration:0.01ms !important;
+scroll-behavior:auto !important;
 }
 }
 script{
@@ -366,6 +360,36 @@ font-style:normal;
 b b,
 strong strong{
 font-weight:normal;
+}
+.cssc-visually-hidden,
+body:after,
+.cssc-sr-only{
+position:absolute !important;
+top:0 !important;
+left:-100vw !important;
+width:1px !important;
+height:1px !important;
+overflow:hidden !important;
+white-space:nowrap !important;
+opacity:0.001 !important;
+}
+dialog{
+padding:1em;
+border:1px solid;
+font:inherit;
+vertical-align:baseline;
+outline:0;
+color:#000;
+background:transparent no-repeat top left;
+background-color:#FFF;
+}
+dialog::-webkit-backdrop{
+opacity:0.75;
+background-color:#000;
+}
+dialog::backdrop{
+opacity:0.75;
+background-color:#000;
 }
 .nav-toggle{
 display:inline-block;
@@ -1372,6 +1396,17 @@ display:none;
 display:none !important;
 }
 }
+.centered-container .cc-full-bg img,
+.centered-container .cc-full-image img{
+z-index:1;
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+-o-object-fit:cover;
+object-fit:cover;
+}
 .simple-grid{
 margin-bottom:45px;
 }
@@ -1447,8 +1482,8 @@ display:none !important;
 }
 @font-face{
 font-family:"icons";
-src:url("../../assets/fonts/icons/icons.eot?1674996625");
-src:url("../../assets/fonts/icons/icons.eot?1674996625#iefix") format("eot"),url("../../assets/fonts/icons/icons.woff2?1674996625") format("woff2"),url("../../assets/fonts/icons/icons.woff?1674996625") format("woff"),url("../../assets/fonts/icons/icons.ttf?1674996625") format("truetype"),url("../../assets/fonts/icons/icons.svg?1674996625#icons") format("svg");
+src:url("../../assets/fonts/icons/icons.eot?1717421152");
+src:url("../../assets/fonts/icons/icons.eot?1717421152#iefix") format("eot"),url("../../assets/fonts/icons/icons.woff2?1717421152") format("woff2"),url("../../assets/fonts/icons/icons.woff?1717421152") format("woff"),url("../../assets/fonts/icons/icons.ttf?1717421152") format("truetype"),url("../../assets/fonts/icons/icons.svg?1717421152#icons") format("svg");
 }
 .icon:before,.projects-list h4 a:before{
 font-family:"icons";
